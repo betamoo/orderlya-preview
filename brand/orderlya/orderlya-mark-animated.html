@@ -1,0 +1,17 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Orderlya — animated mark (drop-in example)</title>
+<style>
+  body{margin:0;display:grid;place-items:center;min-height:100vh;background:#FFFFFF}
+  #mark{width:200px;height:200px;cursor:pointer}
+</style>
+<!-- The ring (table) is static; the chairs are built + animated by orderlya-logo.js -->
+<svg id="mark" viewBox="0 0 100 100" role="img" aria-label="Orderlya">
+  <circle cx="50" cy="50" r="24" fill="#A6713F"></circle>
+  <circle cx="50" cy="50" r="24" fill="none" stroke="#171512" stroke-width="7"></circle>
+  <g class="orderlya-chairs"></g>
+</svg>
+<script type="module">
+  import { animateOrderlyaMark } from './orderlya-logo.js';
+  animateOrderlyaMark(document.getElementById('mark'));
+</script>

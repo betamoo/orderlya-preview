@@ -1,0 +1,1 @@
+import{h as o}from"./navAuth.COAmkvTe.js";if(o(window.localStorage)){const e=document.getElementById("trial-form"),t=document.getElementById("otp-step"),n=document.getElementById("signed-in-state");e&&(e.hidden=!0),t&&(t.hidden=!0),n&&(n.hidden=!1)}

@@ -1,0 +1,12 @@
+{
+  "name": "Orderlya",
+  "short_name": "Orderlya",
+  "description": "The all-in-one restaurant operating system — take the order, we run the rest. Unlimited orders, zero commission.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#171512",
+  "icons": [
+    { "src": "/brand/orderlya/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "$ref": "#/definitions/blog",
+  "definitions": {
+    "blog": {
+      "type": "object",
+      "properties": {
+        "slug": {
+          "type": "string"
+        },
+        "locale": {
+          "type": "string",
+          "enum": [
+            "en",
+            "ar"
+          ]
+        },
+        "order": {
+          "type": "number",
+          "default": 9999
+        },
+        "path": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "eyebrow": {
+          "type": "string"
+        },
+        "h1": {
+          "type": "string"
+        },
+        "dek": {
+          "type": "string"
+        },
+        "datePublished": {
+          "type": "string"
+        },
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "heading": {
+                "type": "string"
+              },
+              "body": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "heading",
+              "body"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "faqHeading": {
+          "type": "string"
+        },
+        "faqs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "q": {
+                "type": "string"
+              },
+              "a": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "q",
+              "a"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "relatedHeading": {
+          "type": "string"
+        },
+        "related": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "label"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "slug",
+        "locale",
+        "path",
+        "title",
+        "description",
+        "eyebrow",
+        "h1",
+        "dek",
+        "datePublished",
+        "sections",
+        "faqHeading",
+        "faqs",
+        "relatedHeading",
+        "related"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,0 +1,133 @@
+# Orderlya — full reference
+
+> Orderlya (Arabic: أوردرليا) is an AI-powered, WhatsApp-first restaurant operating system
+> for MENA — "take the order, we run the rest." Arabic as a first-class language, full RTL,
+> EGP-native pricing. Unlimited orders, zero per-order commission. The entity description +
+> EGP pricing below are canonical and must stay in sync with llms.txt and the site JSON-LD.
+
+## Overview
+Orderlya turns WhatsApp, Instagram and Messenger into a restaurant's ordering channel: an
+AI agent takes and confirms the order conversationally (Egyptian Arabic or English), hands
+off to a human only when needed, and the order lands on a live kitchen board and one
+operator dashboard. From there the POS, dine-in floor, delivery dispatch and the numbers all
+run from one screen. Cash-on-delivery is the default; card payments via Paymob (EGP) can be
+enabled. Everything is scoped per restaurant (tenant) with PDPL-aligned log redaction.
+
+## The three plans (EGP / month) — unlimited orders, zero commission
+Orders are ALWAYS unlimited and commission-free on every plan. The monthly number is an
+AI-channel-order allowance — orders received through WhatsApp/Instagram/Messenger, which
+still count if you take over the chat yourself; POS, dine-in, phone and aggregator orders never count. Plans are cumulative.
+<!-- CATALOG:BEGIN plans -->
+- Start — EGP 850/month, 250 AI-channel orders/month + 25 Enhanced-AI units/month (single location).
+  AI ordering 24/7, the Omnichannel Inbox (WhatsApp, Instagram & Messenger, incl.
+  bring-your-own WhatsApp number), your own branded ordering page (hosted on Orderlya) + live
+  tracking link, same-day AI menu import, POS register, loyalty, discounts, customer records,
+  a free SEO health meter (a diagnostic that scores how findable your storefront is — not a
+  ranking promise), COD + card payments and QR-pay/order-tracking.
+- Run — EGP 1,850/month, 750 AI-channel orders/month + 50 Enhanced-AI units/month (includes 1 branch; +EGP 1,250/mo per extra branch).
+  Most popular. Everything in Start plus delivery dispatch with a driver app, live map, ETAs
+  and per-driver cash reconciliation, Kitchen Display, dine-in floor with QR-pay, reservations
+  & waitlist, call center, service recovery/complaints, live quality alerts, cash control
+  (blind-count drawer close with over/short and a manager approval hold), branch-manager
+  cockpit and labour-cost tracking.
+- Scale — EGP 2,850/month, includes 1 branch with 1,500 AI-channel orders/branch/month + 100 Enhanced-AI units/month; +EGP 1,250/mo per extra branch (unlimited branches).
+  Everything in Run plus Brand HQ multi-branch roll-ups, inventory with real food cost per
+  dish and an auto sell-out guard, bookkeeping & Egypt VAT reports (CSV export; ETA e-invoice
+  filing in preview), business insights + an ask-your-data copilot, win-back campaign tools,
+  gift cards, loss-prevention alerts, and aggregator settlement reconciliation
+  (manual settlement-file upload & match, not a live auto-feed).
+- All prices include VAT. Egypt VAT (14%) is included in every plan and add-on price
+  above (Egyptian VAT is inclusive by law — the tax is backed out of the price shown, never
+  added on top at checkout).
+<!-- CATALOG:END plans -->
+
+## Trial
+<!-- CATALOG:BEGIN trial -->
+- 14 days, no credit card required. Includes 50 AI-channel orders to try the AI; if they're
+  used up the AI pauses while POS/dine-in/walk-in orders keep working (never locked out).
+  No permanent free tier.
+<!-- CATALOG:END trial -->
+
+## Add-ons (à-la-carte on any plan; bundled at Scale)
+<!-- CATALOG:BEGIN addons -->
+- AI Growth Package: EGP 1,250 ONE-TIME top-up (not monthly) — adds 500 AI-channel
+  orders and 100 Enhanced-AI units to your balance; it STACKS (buy again to add more) and
+  does NOT reset each month. Enhanced-AI features are on every plan (Invoice OCR, Demand
+  Forecasting, Smart Upselling, recommendations, preference memory, mood cues, proactive delay
+  messages, win-back and FAQ suggestions) — each AI action uses 1 Unit; this pack tops the
+  units up. Available on any plan.
+- Get Found (SEO): EGP 250/month — the ACTIVE AI enrichment: AI-written
+  search-ready menu pages, a web page per dish and structured data so customers find you on
+  Google and Maps. Includes 1 free refresh per month; each extra one-off refresh is
+  EGP 250. Available on any plan. (The free SEO health meter that scores your
+  findability is already on every plan from Start up — this add-on is the paid work that acts on it.)
+<!-- CATALOG:END addons -->
+- Money & Stock (inventory + bookkeeping/VAT reports) and Insights (BI dashboards +
+  ask-your-data copilot) are INCLUDED in the Scale plan — they are no longer separate
+  add-ons; upgrade to Scale to get them.
+
+## Honesty notes (roadmap framing)
+- Demand forecasting, churn/anomaly and FAQ suggestions are early/experimental — framed as
+  hints, not guarantees.
+- Aggregator support today is settlement reconciliation; two-way live order/menu sync is on
+  the roadmap.
+- Accounting covers bookkeeping and Egypt VAT-period reports; statutory ETA e-invoice filing
+  is still in preview.
+- Full offline POS mode and tenant self-serve data-subject (DSAR) export are not yet shipped.
+
+## Languages and region
+- Egyptian Arabic and English, full RTL. Light and dark themes. MENA-wide.
+  EGP is the home currency.
+
+## Getting started
+- Start a free trial at https://orderlya.com/ — sign up with email or phone, pick a plan,
+  verify, and land in guided onboarding. No credit card at signup.
+
+## Frequently asked questions
+- What platform can I use to take my restaurant's orders on WhatsApp? Orderlya is an
+  AI-powered, WhatsApp-first ordering platform for MENA restaurants — an AI agent takes and
+  confirms your customers' orders inside WhatsApp in Arabic or English, your kitchen sees
+  them instantly, and delivery runs itself.
+- Do you charge commission per order? No — Orderlya is a flat monthly EGP subscription. You
+  keep the customer relationship and pay no per-order commission on any channel.
+- What's included in the free trial? 14 days, no credit card required, with 50 AI-channel
+  orders (WhatsApp/Instagram/Messenger — counted even after you take over the chat) to try
+  the AI. POS, dine-in, phone and aggregator orders stay unlimited; if the 50 are used up
+  the AI simply pauses while everything else keeps working. There is no permanent free tier.
+- How do customers pay? Cash on delivery works on every plan, and you can switch on card
+  payments via Paymob (EGP) whenever you're ready.
+- What happens to my data (PDPL)? Your data is yours; each restaurant's data is strictly
+  separated and personal details are redacted from logs, in line with Egypt's PDPL.
+
+## How Orderlya compares
+- Versus delivery aggregators: you own the customer relationship and pay no per-order
+  commission (aggregators take 20–30% and keep the customer).
+- Versus a generic WhatsApp chatbot: Orderlya includes POS, a kitchen board, delivery
+  dispatch, dine-in, loyalty and reporting — not just a chat widget.
+- Versus the enterprise restaurant suites: comparable operational depth with a native AI/
+  social-ordering layer, at SMB pricing, Arabic-first.
+- Versus building it yourself: live the same day, no engineering team required.
+
+## Pages
+- [Home](https://orderlya.com/): what Orderlya is, how AI order-taking works, and the free-trial signup funnel.
+- [Features](https://orderlya.com/features): the full capability list — AI ordering, Omnichannel Inbox, POS, kitchen, delivery, storefront, loyalty, inventory, accounting, insights.
+- [Pricing](https://orderlya.com/pricing): the three plans (Start / Run / Scale) in EGP, order allowances, and à-la-carte add-ons — unlimited orders, zero commission.
+- [Compare](https://orderlya.com/compare): how Orderlya compares to delivery aggregators, generic WhatsApp chatbots, enterprise suites, and building it yourself.
+- [FAQ](https://orderlya.com/faq): common questions — commission, the free trial, how customers pay, data protection (PDPL).
+- [About](https://orderlya.com/about): who Orderlya is for and the "take the order, we run the rest" mission for MENA restaurants.
+- [Legal — Privacy & Terms](https://orderlya.com/legal): the PDPL-aligned privacy notice and terms of service.
+- [Start free trial](https://orderlya.com/#signup): begin a 14-day trial (no credit card) — sign up with email or phone and land in guided onboarding.
+
+## Solutions & feature pages
+- [WhatsApp ordering system for Egypt](https://orderlya.com/whatsapp-ordering-egypt): take orders on WhatsApp with an Arabic-speaking AI — no app for customers, no commission on your own channel.
+- [AI order-taking](https://orderlya.com/ai-ordering): a conversational AI that takes and confirms orders on WhatsApp, Instagram and Messenger in Arabic or English, day and night.
+- [Commission-free ordering in Egypt](https://orderlya.com/commission-free-egypt): stop paying ~20–30% aggregator commission on your own repeat customers — a flat monthly plan on your own channel.
+- [A Foodics alternative for Egypt](https://orderlya.com/compare/foodics-alternative-egypt): an Arabic-first restaurant POS built around WhatsApp AI ordering, priced in EGP, commission-free on your own channel.
+- [Kitchen Display System (KDS)](https://orderlya.com/features/kitchen-display-system): every order on the line screen — by station and course, with bump, recall and an all-day view. No paper tickets.
+- [Accounting & ETA e-invoicing (preview)](https://orderlya.com/features/accounting-eta): restaurant bookkeeping, Egyptian VAT reporting and settlement reconciliation, with ETA e-invoicing built in and in preview.
+- [Restaurant inventory & recipe costing](https://orderlya.com/features/inventory): scan supplier invoices to stock, cost every recipe, auto-86 sold-out dishes, and turn your forecast into prep and par levels.
+- [Signals — proactive alerts](https://orderlya.com/features/signals): Orderlya watches your restaurant and alerts you to cash variance, void spikes, quality drops, late orders and low stock.
+
+## Optional
+- [Arabic home](https://orderlya.com/ar/): the full Arabic (RTL) marketing site.
+- [Short reference](https://orderlya.com/llms.txt): the condensed llms.txt summary of the same facts.

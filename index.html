@@ -1,0 +1,1101 @@
+<!DOCTYPE html><html lang="en" dir="ltr"> <head><meta name="robots" content="noindex, nofollow"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- Google tag (gtag.js) — Google Ads global site tag. Placed as early as
+         practical in <head> (immediately after charset/viewport) so it lands on
+         EVERY EN + AR marketing page via this shared layout. Exactly ONE per page
+         (Google warns against duplicates). Tag ID is a PUBLIC Google Ads ID
+         (src/data/site.ts). NOT consent-gated for now (founder priority = ship;
+         consent-mode is a later refinement). Guarded by src/__tests__/gtag.test.ts. --><script>(function(){const gtagId = "AW-937830596";
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", gtagId);
+    })();</script><title>Orderlya — WhatsApp ordering system for restaurants in MENA</title><meta name="description" content="The WhatsApp ordering system for restaurants: Orderlya's AI takes orders, your kitchen sees them instantly, and delivery runs itself — all on one cloud POS."><!-- Search-engine site verification (rendered only when the build-time env var is set). --><!-- Meta (Facebook Business) domain verification — gates WhatsApp Business
+         Platform access, launch-critical. HARDCODED (not build-time env like the
+         Google/Bing tags above): this is a permanent, public, non-rotating
+         domain-verification token, and the marketing bundle is PRE-BUILT +
+         COMMITTED — an env-driven tag only reaches prod if whoever rebuilds
+         happens to have the var set locally, which is too fragile for a
+         one-shot verification gate. Renders on EVERY page via this shared
+         layout, so it is present on the home page (the one Meta checks).
+         Do not remove without first re-verifying the domain in Meta Business
+         Settings, or WhatsApp Cloud API access for this domain breaks. --><meta name="facebook-domain-verification" content="s9rptzssy91imbqws6e85y0vu5on57"><!-- theme-color adapts to the resolved theme (light Cream / dark Espresso). --><meta name="theme-color" content="#ECE3D4" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#221E18" media="(prefers-color-scheme: dark)"><!-- Theme init (LIGHT + DARK). Set data-theme BEFORE first paint (no FOUC): use the
+         stored choice if present, else fall back to the OS preference. Persisted key is
+         `orderlya_theme`; the Header toggle flips + stores it. --><script>
+      (function () {
+        try {
+          var t = localStorage.getItem("orderlya_theme");
+          if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script><!-- Brand type (Bricolage Grotesque, Hanken Grotesk, JetBrains Mono, IBM Plex Sans
+         Arabic) is SELF-HOSTED via @fontsource and bundled into the Astro CSS graph — no
+         Google Fonts / no third-party font request. --><!-- Orderlya brand favicon / app icons --><link rel="icon" type="image/svg+xml" href="/orderlya-preview/brand/orderlya/orderlya-favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="/orderlya-preview/brand/orderlya/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/orderlya-preview/brand/orderlya/apple-touch-icon-180.png"><link rel="manifest" href="/orderlya-preview/manifest.json"><!-- Canonical + hreflang pair (self + alternate + x-default) --><link rel="canonical" href="https://orderlya.com/"><link rel="alternate" hreflang="en" href="https://orderlya.com/"><link rel="alternate" hreflang="ar" href="https://orderlya.com/ar"><link rel="alternate" hreflang="x-default" href="https://orderlya.com/"><!-- Open Graph / Twitter --><meta property="og:type" content="website"><meta property="og:site_name" content="Orderlya"><meta property="og:title" content="Orderlya — WhatsApp ordering system for restaurants in MENA"><meta property="og:description" content="The WhatsApp ordering system for restaurants: Orderlya's AI takes orders, your kitchen sees them instantly, and delivery runs itself — all on one cloud POS."><meta property="og:url" content="https://orderlya.com/"><meta property="og:image" content="https://orderlya.com/shots/operator-orders-light.webp"><meta property="og:image:width" content="1600"><meta property="og:image:height" content="1000"><meta property="og:image:alt" content="Orderlya operator — live incoming orders board"><meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="ar_EG"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Orderlya — WhatsApp ordering system for restaurants in MENA"><meta name="twitter:description" content="The WhatsApp ordering system for restaurants: Orderlya's AI takes orders, your kitchen sees them instantly, and delivery runs itself — all on one cloud POS."><meta name="twitter:image" content="https://orderlya.com/shots/operator-orders-light.webp"><meta name="twitter:image:alt" content="Orderlya operator — live incoming orders board"><!-- TODO(director): add twitter:site / twitter:creator once an official @handle exists. --><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://orderlya.com/#organization","name":"Orderlya","url":"https://orderlya.com","logo":"https://orderlya.com/brand/orderlya/orderlya-mark.svg","description":"Orderlya is an AI-powered, WhatsApp-first ordering platform for MENA restaurants — an AI agent takes and confirms your customers' orders inside WhatsApp in Arabic or English, your kitchen sees them instantly, and delivery runs itself. 14-day free trial, no credit card.","areaServed":["EG","SA","AE","KW","QA","OM","BH","JO","MENA"],"sameAs":["https://www.linkedin.com/company/orderlya","https://www.instagram.com/order.lya","https://www.facebook.com/orderlya"],"email":"hello@orderlya.com","contactPoint":{"@type":"ContactPoint","email":"hello@orderlya.com","contactType":"customer support","availableLanguage":["en","ar"]}},{"@type":"WebSite","@id":"https://orderlya.com/#website","name":"Orderlya","url":"https://orderlya.com","description":"Orderlya is an AI-powered, WhatsApp-first ordering platform for MENA restaurants — an AI agent takes and confirms your customers' orders inside WhatsApp in Arabic or English, your kitchen sees them instantly, and delivery runs itself. 14-day free trial, no credit card.","inLanguage":["en","ar"],"publisher":{"@id":"https://orderlya.com/#organization"}},{"@type":"SoftwareApplication","@id":"https://orderlya.com/#software","name":"Orderlya","applicationCategory":"BusinessApplication","operatingSystem":"Web, WhatsApp","description":"Orderlya is an AI-powered, WhatsApp-first ordering platform for MENA restaurants — an AI agent takes and confirms your customers' orders inside WhatsApp in Arabic or English, your kitchen sees them instantly, and delivery runs itself. 14-day free trial, no credit card.","image":"https://orderlya.com/brand/orderlya/orderlya-wordmark-1200.png","offers":{"@type":"AggregateOffer","priceCurrency":"EGP","lowPrice":"850","highPrice":"2850","offerCount":"6","offers":[{"@type":"Offer","name":"Start","price":"850","priceCurrency":"EGP","availability":"https://schema.org/InStock","url":"https://orderlya.com/pricing","priceSpecification":{"@type":"UnitPriceSpecification","price":"850","priceCurrency":"EGP","unitText":"branch/month","valueAddedTaxIncluded":true}},{"@type":"Offer","name":"Run","price":"1850","priceCurrency":"EGP","availability":"https://schema.org/InStock","url":"https://orderlya.com/pricing","priceSpecification":{"@type":"UnitPriceSpecification","price":"1850","priceCurrency":"EGP","unitText":"branch/month","valueAddedTaxIncluded":true}},{"@type":"Offer","name":"Scale","price":"2850","priceCurrency":"EGP","availability":"https://schema.org/InStock","url":"https://orderlya.com/pricing","priceSpecification":{"@type":"UnitPriceSpecification","price":"2850","priceCurrency":"EGP","unitText":"branch/month","valueAddedTaxIncluded":true}},{"@type":"Offer","name":"AI Growth Package","price":"1250","priceCurrency":"EGP","availability":"https://schema.org/InStock","url":"https://orderlya.com/pricing","priceSpecification":{"@type":"UnitPriceSpecification","price":"1250","priceCurrency":"EGP","valueAddedTaxIncluded":true}},{"@type":"Offer","name":"Get Found (SEO)","price":"250","priceCurrency":"EGP","availability":"https://schema.org/InStock","url":"https://orderlya.com/pricing","priceSpecification":{"@type":"UnitPriceSpecification","price":"250","priceCurrency":"EGP","valueAddedTaxIncluded":true}},{"@type":"Offer","name":"Free trial","price":"0","priceCurrency":"EGP","availability":"https://schema.org/InStock","url":"https://orderlya.com/pricing","description":"14-day free trial, up to 50 AI orders, no credit card."}]}}]}</script><!-- Essential first-party analytics beacon (L0 page_view) — privacy-friendly,
+         no cross-site tracking. Fires to the app origin's /beacon; failure is
+         silent + non-blocking. anonymous_id persists the visitor across pages.
+         Optional third-party analytics stay gated behind the consent banner. --><script>(function(){const apiBase = "";
+const locale = "en";
+
+      (function () {
+        try {
+          var KEY = "orderlya_aid";
+          var aid = localStorage.getItem(KEY);
+          if (!aid) {
+            aid =
+              (crypto && crypto.randomUUID && crypto.randomUUID()) ||
+              "aid_" + Date.now() + "_" + Math.random().toString(36).slice(2);
+            localStorage.setItem(KEY, aid);
+          }
+          var body = JSON.stringify({
+            event_name: "page_view",
+            anonymous_id: aid,
+            locale: locale,
+            properties: { path: location.pathname },
+          });
+          var url = apiBase + "/beacon";
+          if (navigator.sendBeacon) {
+            navigator.sendBeacon(url, new Blob([body], { type: "application/json" }));
+          } else {
+            fetch(url, { method: "POST", body: body, headers: { "Content-Type": "application/json" }, keepalive: true });
+          }
+        } catch (e) {
+          /* first-party beacon is best-effort; never block the page */
+        }
+      })();
+    })();</script><!-- PostHog client-side session replay (#147). Un-gated per founder directive,
+         and since 2026-09-06 it masks NOTHING — there is no PII backstop here. Every
+         input value recorded on this site, the trial-signup form included, is
+         cleartext. See PostHogReplay.astro. Bundled (not is:inline) so posthog-js is
+         bundled. --><script type="module" src="/orderlya-preview/_astro/PostHogReplay.astro_astro_type_script_index_0_lang.DDcJjz7y.js"></script><!-- Conversion/funnel event seam (lib/track.ts) — installs window.orderlyaTrack so
+         island scripts can fire the 4 named events (trial_signup / signup_started /
+         demo_bot_click / pricing_view) to BOTH posthog + Google Ads gtag. --><script type="module" src="/orderlya-preview/_astro/Track.astro_astro_type_script_index_0_lang.Bg20IFfC.js"></script><link rel="stylesheet" href="/orderlya-preview/_astro/about.CUDOiIZj.css">
+<style>.ord-mark{display:inline-block;line-height:0}.ord-mark svg{width:var(--mark-size, 64px);height:var(--mark-size, 64px);display:block}
+.vat-note[data-astro-cid-yyxdh3ou]{margin:0 auto 1rem;text-align:center;font-size:.9rem;color:var(--muted, var(--ink))}.cur-select[data-astro-cid-2tdw6zmq]{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.6rem;margin:0 auto .5rem}.cur-select-label[data-astro-cid-2tdw6zmq]{font-weight:600;color:var(--muted, var(--ink))}.cur-select-btns[data-astro-cid-2tdw6zmq]{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px;background:var(--surface, transparent)}.cur-btn[data-astro-cid-2tdw6zmq]{min-height:44px;min-width:56px;padding:0 .95rem;border:0;border-radius:999px;background:transparent;color:var(--ink);font:inherit;font-weight:600;cursor:pointer;line-height:1;-webkit-tap-highlight-color:transparent}.cur-btn[data-astro-cid-2tdw6zmq]:hover{background:var(--line)}.cur-btn[data-astro-cid-2tdw6zmq].is-active{background:var(--am, var(--ink));color:#241a08}.cur-btn[data-astro-cid-2tdw6zmq]:focus-visible{outline:2px solid var(--am, currentColor);outline-offset:2px}.cur-billed-note[data-astro-cid-2tdw6zmq]{margin:0 auto 1rem;text-align:center;font-size:.9rem;color:var(--muted, var(--ink))}
+.demo-strip[data-astro-cid-alvkp2ke]{display:flex;flex-wrap:wrap;align-items:center;gap:13px;margin:0}.demo-strip[data-astro-cid-alvkp2ke].spaced{margin:0 0 30px}.demo-wa[data-astro-cid-alvkp2ke]{color:var(--muted);font-size:.9rem;text-decoration:underline;text-underline-offset:3px;transition:color .15s}.demo-wa[data-astro-cid-alvkp2ke]:hover{color:var(--ink)}.demo-wa[data-astro-cid-alvkp2ke] bdi[data-astro-cid-alvkp2ke]{white-space:nowrap}
+</style></head> <body><div style="background:#221E18;color:#FBF6EC;font:600 13px/1.4 system-ui,sans-serif;padding:8px 16px;text-align:center">Preview of pending design fixes — the live site is orderlya.com. Sign-up and contact forms do not work here.</div> <!-- `otable-ambient` keeps the O-table (otable) rotation hook name stable for tests. --><div class="ambient-mark otable-ambient" aria-hidden="true"> <span class="amb-mark"> <svg viewBox="0 0 100 100" width="1000" height="1000" role="img" aria-label="Orderlya mark"> <circle cx="50" cy="50" r="30" fill="var(--ord-saffron, #E0A43B)" fill-opacity="0.14"></circle> <g class="ord-chair ord-c0" transform="rotate(0 50 50)"><circle cx="50" cy="17" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle></g> <g class="ord-chair ord-c1" transform="rotate(40 50 50)"><circle cx="50" cy="17" r="6.5" fill="currentColor"></circle></g> <g class="ord-chair ord-c2" transform="rotate(80 50 50)"><circle cx="50" cy="17" r="6.5" fill="currentColor"></circle></g> <g class="ord-chair ord-c3" transform="rotate(120 50 50)"><circle cx="50" cy="17" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle></g> <g class="ord-chair ord-c4" transform="rotate(160 50 50)"><circle cx="50" cy="17" r="6.5" fill="currentColor"></circle></g> <g class="ord-chair ord-c5" transform="rotate(200 50 50)"><circle cx="50" cy="17" r="6.5" fill="currentColor"></circle></g> <g class="ord-chair ord-c6" transform="rotate(240 50 50)"><circle cx="50" cy="17" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle></g> <g class="ord-chair ord-c7" transform="rotate(280 50 50)"><circle cx="50" cy="17" r="6.5" fill="currentColor"></circle></g> <g class="ord-chair ord-c8" transform="rotate(320 50 50)"><circle cx="50" cy="17" r="6.5" fill="currentColor"></circle></g> </svg> </span> </div>  <a href="#main" class="skip-link">Skip to content</a> <header class="bar"> <div class="wrap"> <nav class="nav" aria-label="Primary"> <a class="brandtag" href="/orderlya-preview/" aria-label="Orderlya home"> <span class="word wm-inline wm-header wm-arrange" style="--wm-h:36px" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 388 116" width="388" height="116" role="img" aria-label="Orderlya logo">
+  <g transform="translate(2 12) scale(0.92)">
+    <circle cx="50" cy="50" r="30" fill="var(--ord-saffron, #E0A43B)" fill-opacity="0.12"></circle>
+    <circle cx="71.21" cy="24.72" r="6.5" fill="currentColor"></circle>
+    <circle cx="82.50" cy="44.27" r="6.5" fill="currentColor"></circle>
+    <circle cx="61.29" cy="81.01" r="6.5" fill="currentColor"></circle>
+    <circle cx="38.71" cy="81.01" r="6.5" fill="currentColor"></circle>
+    <circle cx="17.50" cy="44.27" r="6.5" fill="currentColor"></circle>
+    <circle cx="28.79" cy="24.72" r="6.5" fill="currentColor"></circle>
+    <circle cx="50.00" cy="17.00" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+    <circle cx="78.58" cy="66.50" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+    <circle cx="21.42" cy="66.50" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+  </g>
+  <text x="97" y="84" font-family="'Bricolage Grotesque Variable','Bricolage Grotesque','Arial Black',sans-serif" font-size="74" font-weight="700" letter-spacing="-3.5" fill="currentColor">rder<tspan fill="var(--brand-lya, #B0472B)">lya</tspan></text>
+</svg>
+</span>   <span class="ord-mark brand-mark" style="--mark-size:34px" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512" role="img" aria-label="Orderlya mark">
+  <circle cx="50" cy="50" r="30" fill="var(--ord-saffron, #E0A43B)" fill-opacity="0.12"></circle>
+  <circle cx="71.21" cy="24.72" r="6.5" fill="currentColor"></circle>
+  <circle cx="82.50" cy="44.27" r="6.5" fill="currentColor"></circle>
+  <circle cx="61.29" cy="81.01" r="6.5" fill="currentColor"></circle>
+  <circle cx="38.71" cy="81.01" r="6.5" fill="currentColor"></circle>
+  <circle cx="17.50" cy="44.27" r="6.5" fill="currentColor"></circle>
+  <circle cx="28.79" cy="24.72" r="6.5" fill="currentColor"></circle>
+  <circle cx="50.00" cy="17.00" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+  <circle cx="78.58" cy="66.50" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+  <circle cx="21.42" cy="66.50" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+</svg>
+</span>  </a> <button type="button" class="nav-toggle-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Menu" id="nav-toggle">
+☰
+</button> <div class="navlinks" id="nav-links"> <a href="/orderlya-preview/features">Features</a><a href="/orderlya-preview/pricing">Pricing</a><a href="/orderlya-preview/compare">Compare</a><a href="/orderlya-preview/faq">FAQ</a><a href="/orderlya-preview/blog">Blog</a><a href="/orderlya-preview/about">About</a><a href="/orderlya-preview/contact">Contact</a>  <div class="navlinks-tools"> <a href="/orderlya-preview/ar" class="lang" hreflang="ar" lang="ar">العربية</a> <button class="toggle theme-toggle" type="button" aria-label="Toggle light or dark theme"> <span class="theme-icon" aria-hidden="true">☀</span> </button> </div> </div> <span class="navspace"></span> <div class="navtools"> <a href="/orderlya-preview/ar" class="lang" hreflang="ar" lang="ar">العربية</a> <button class="toggle theme-toggle" type="button" aria-label="Toggle light or dark theme"> <span class="theme-icon" aria-hidden="true">☀</span> </button> <a href="/orderlya-preview/home" class="nav-login" data-testid="nav-login">Log in</a> <a href="/orderlya-preview/#signup" class="btn primary sm nav-cta">Start free trial</a> <a href="/orderlya-preview/home" class="btn primary sm nav-dashboard" data-testid="nav-dashboard" hidden>My Dashboard</a> <button type="button" class="nav-logout" data-testid="nav-logout" hidden>Sign out</button> </div> </nav> </div> </header> <script>
+  (function () {
+    // Mobile disclosure.
+    var btn = document.getElementById("nav-toggle");
+    var links = document.getElementById("nav-links");
+    if (btn && links) {
+      btn.addEventListener("click", function () {
+        var open = links.classList.toggle("open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+    // NOTE: the returning-operator auth toggle ("Dashboard" + "Sign out" when an
+    // operator session exists) lives in the BUNDLED module script below (imports
+    // ../lib/navAuth), NOT here — it is a shared, unit-tested seam so the recurring
+    // "logged-in nav invisible" bug is catchable by the guard (nav-login.test.ts).
+    // Theme toggle (LIGHT + DARK). Flip data-theme, persist, repaint the icon(s).
+    // Class-based so BOTH toggle copies work — the top-right one (.navtools) and the
+    // compact-phone one relocated into the disclosure menu (.navlinks-tools).
+    var root = document.documentElement;
+    var tbtns = document.querySelectorAll(".theme-toggle");
+    var icons = document.querySelectorAll(".theme-icon");
+    function current() {
+      var a = root.getAttribute("data-theme");
+      if (a === "light" || a === "dark") return a;
+      return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    function paint(mode) {
+      for (var i = 0; i < icons.length; i++) icons[i].textContent = mode === "dark" ? "☾" : "☀";
+    }
+    paint(current());
+    for (var j = 0; j < tbtns.length; j++) {
+      tbtns[j].addEventListener("click", function () {
+        var next = current() === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try {
+          localStorage.setItem("orderlya_theme", next);
+        } catch (e) {}
+        paint(next);
+      });
+    }
+  })();
+</script> <!-- Returning-operator auth toggle (BUNDLED module → runs after DOM parse). Reveals
+     "Dashboard" + "Sign out" when an operator session (localStorage['crm_token'])
+     is present on this same-origin site, and hides the ghost "Log in" + trial CTA;
+     logged out is the server-rendered default. Logic is the shared, unit-tested
+     ../lib/navAuth seam (guard: nav-login.test.ts) so this can't silently regress. The
+     localized logged-out home is read off the brand link's href (bundled scripts can't
+     see Astro frontmatter). --> <script type="module" src="/orderlya-preview/_astro/Header.astro_astro_type_script_index_0_lang.715lvIK2.js"></script> <main id="main">  <!-- ===================== HERO ===================== --><section class="hero" id="product"> <div class="wrap"> <div class="herogrid"> <div class="herocopy"> <span class="brow"><span class="dot" aria-hidden="true"></span>The all-in-one restaurant OS</span> <h1>Take the order.<br><span class="am">We run the rest.</span></h1> <p class="lede">Orderlya turns WhatsApp and Instagram into your busiest, calmest cashier — then runs the POS, the kitchen, delivery and the numbers from one screen. You don&#39;t need a call-centre or a team glued to the phone: the AI answers every message and takes the order for you — you step in only when it matters.</p> <div class="cta"> <a class="btn primary" href="#signup"> Start your free trial <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg> </a> <a class="btn ghost" href="#how">See how it works</a> <p class="demo-strip" data-astro-cid-alvkp2ke> <a class="btn ghost" href="https://orderlya.com/orderlya-demo?lang=en" target="_blank" rel="noopener noreferrer" aria-label="Try Orderlya on a live demo storefront (opens in a new tab)" data-astro-cid-alvkp2ke> Try it yourself </a> <a class="demo-wa" href="https://wa.me/12065387505?text=Hi!%20I'd%20like%20to%20order" target="_blank" rel="noopener noreferrer" aria-label="Order from the Orderlya demo restaurant on WhatsApp (opens in a new tab)" data-astro-cid-alvkp2ke> Or order from the demo on WhatsApp  <bdi dir="ltr" data-astro-cid-alvkp2ke>+1 206 538 7505</bdi> </a> </p>  </div> <div class="microtrust"> <span> <svg class="tick" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg> <span>Unlimited orders</span> </span><span> <svg class="tick" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg> <span>zero <s class="struck">commission</s></span> </span><span> <svg class="tick" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg> <span>14-day free trial</span> </span><span> <svg class="tick" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg> <span>no <s class="struck">card</s></span> </span> </div> </div> <div class="herovis" aria-hidden="true"> <!-- The standalone hand-drawn chaired-O mark was REMOVED here (#98): it duplicated
+             the header wordmark's chaired-O AND was a second big rotating circle competing
+             with the faded ambient background mark. The hero now leads with the PRODUCT
+             (the phone mock); the ONLY rotating mark on the page is the subtle ambient
+             background watermark (AmbientMark.astro), which reuses the shipped brand SVG. --> <div class="phone"> <span class="side left act" aria-hidden="true"></span> <span class="side left vol" aria-hidden="true"></span> <span class="side right pow" aria-hidden="true"></span> <span class="side right cam" aria-hidden="true"></span> <div class="screen"> <span class="island" aria-hidden="true"></span> <div class="statusbar"> <span class="time">9:41</span> <span class="sbicons"> <svg class="sig" viewBox="0 0 18 12" width="17" height="11" fill="currentColor" aria-hidden="true"><rect x="0" y="8" width="3" height="4" rx="1"></rect><rect x="4.5" y="6" width="3" height="6" rx="1"></rect><rect x="9" y="3.5" width="3" height="8.5" rx="1"></rect><rect x="13.5" y="0.5" width="3" height="11.5" rx="1"></rect></svg> <svg class="wifi" viewBox="0 0 16 13" width="16" height="12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M2 5.2a9 9 0 0 1 12 0"></path><path d="M4.3 7.7a5.6 5.6 0 0 1 7.4 0"></path><path d="M6.6 10.1a2.4 2.4 0 0 1 2.8 0"></path></svg> <svg class="batt" viewBox="0 0 26 12" width="25" height="12" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="11" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"></rect><rect x="2" y="2" width="16" height="8" rx="1.6" fill="currentColor"></rect><rect x="24" y="4" width="1.7" height="4" rx="0.8" fill="currentColor" fill-opacity="0.5"></rect></svg> </span> </div> <div class="wahead"> <img class="av" src="/orderlya-preview/brand/orderlya/orderlya-app-icon.svg" alt="Orderlya WhatsApp chat avatar"> <div><div class="nm">Koshary Abou Tarek</div><div class="st">Orderlya · replies instantly</div></div> <span class="wa"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15l-1 4 4.1-1A10 10 0 1 0 12 2Z"></path></svg></span> </div> <div class="wabody"> <div class="bub in">Hi! I'd like a large koshari and a sugarcane juice — delivery to Maadi please 🙏</div><div class="bub ai"> <div class="who">Orderlya AI</div> <div class>Of course! Large koshari (50 EGP) + sugarcane juice (20 EGP) + Maadi delivery (15 EGP) = <b>85 EGP</b>. Deliver to your saved address — 14 Road 9, Maadi, Bldg 7, Floor 3, Apt 12. Confirm the order?</div> </div><div class="bub in">Yes, confirm 👍</div><div class="bub ai"> <div class="who">Orderlya AI</div> <div class>Confirmed ✅ Order <b>#4471</b>. Arriving in 30–40 min 🔗</div> </div> <div class="watime">Order confirmed · sent to kitchen</div> </div> <div class="wafoot"> <span class="fld">Message…</span> <span class="snd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M12 5l7 7-7 7"></path></svg></span> </div> </div> <div class="floatchip"> <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span> <div><div class="t">Order #4471 fired</div><div class="s">Kitchen · 0 taps from you</div></div> </div> </div> </div> </div> </div> </section> <!-- ===================== PRODUCT SHOWCASE (real screenshots) ===================== --> <section class="stage" id="product-shots"> <div class="wrap"> <span class="eyebrow">See it in action</span> <h2>One dashboard runs every branch</h2> <p class="lead"> Live orders, a menu you update once, and reports that write themselves — everything to run your restaurant from one screen. </p> <figure class="shotframe hero-shot"> <img class="shot-light" src="/orderlya-preview/shots/operator-orders-light.webp" width="1600" height="1000" loading="eager" decoding="async" alt="Orderlya operator dashboard — every live order across all branches in one place"> <img class="shot-dark" src="/orderlya-preview/shots/operator-orders-dark.webp" width="1600" height="1000" loading="eager" decoding="async" alt="Orderlya operator dashboard — every live order across all branches in one place"> </figure> <div class="shotgrid"> <figure class="shotframe"> <img class="shot-light" src="/orderlya-preview/shots/operator-menu-light.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="Orderlya menu editor — items, prices and photos"> <img class="shot-dark" src="/orderlya-preview/shots/operator-menu-dark.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="Orderlya menu editor — items, prices and photos"> <figcaption>One menu, everywhere at once</figcaption> </figure> <figure class="shotframe"> <img class="shot-light" src="/orderlya-preview/shots/operator-reports-light.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="Orderlya reports — sales, kitchen performance and scheduled exports"> <img class="shot-dark" src="/orderlya-preview/shots/operator-reports-dark.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="Orderlya reports — sales, kitchen performance and scheduled exports"> <figcaption>Reports that write themselves</figcaption> </figure> <figure class="shotframe"> <img class="shot-light" src="/orderlya-preview/shots/operator-insights-light.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="Orderlya insights — ask your data and a business-health score"> <img class="shot-dark" src="/orderlya-preview/shots/operator-insights-dark.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="Orderlya insights — ask your data and a business-health score"> <figcaption>Ask your data in plain words</figcaption> </figure> </div> </div> <!-- Zoom-to-enlarge lightbox for the screenshots above. Progressive enhancement:
+       the figures become accessible zoom triggers only once the inline script runs;
+       with JS off the screenshots still render + lazy-load exactly as before. --> <div class="shot-lightbox" id="shot-lightbox" role="dialog" aria-modal="true" aria-label="Enlarged screenshot" data-enlarge-label="Enlarge screenshot" hidden> <button type="button" class="shot-lightbox-close" aria-label="Close">&times;</button> <img class="shot-lightbox-img" src="" alt="Enlarged Orderlya dashboard screenshot"> </div> <script>
+    (function () {
+      var box = document.getElementById("shot-lightbox");
+      if (!box) return;
+      var frames = document.querySelectorAll("#product-shots .shotframe");
+      if (!frames.length) return;
+      var img = box.querySelector(".shot-lightbox-img");
+      var closeBtn = box.querySelector(".shot-lightbox-close");
+      var enlarge = box.getAttribute("data-enlarge-label") || "Enlarge";
+      var lastFocus = null;
+
+      // The two <img>s (light/dark) are toggled by CSS display; grab the visible one.
+      function visibleShot(frame) {
+        var imgs = frame.querySelectorAll("img");
+        for (var i = 0; i < imgs.length; i++) {
+          if (imgs[i].offsetParent !== null || imgs[i].offsetWidth > 0) return imgs[i];
+        }
+        return imgs[0] || null;
+      }
+
+      function open(frame) {
+        var shot = visibleShot(frame);
+        if (!shot) return;
+        lastFocus = document.activeElement;
+        img.setAttribute("src", shot.currentSrc || shot.src);
+        img.setAttribute("alt", shot.getAttribute("alt") || "");
+        box.hidden = false;
+        // next frame so the CSS transition (if motion allowed) can run
+        requestAnimationFrame(function () { box.classList.add("open"); });
+        document.body.style.overflow = "hidden";
+        closeBtn.focus();
+        document.addEventListener("keydown", onKey, true);
+      }
+
+      function close() {
+        box.classList.remove("open");
+        box.hidden = true;
+        img.setAttribute("src", "");
+        document.body.style.overflow = "";
+        document.removeEventListener("keydown", onKey, true);
+        if (lastFocus && typeof lastFocus.focus === "function") lastFocus.focus();
+      }
+
+      function onKey(e) {
+        if (e.key === "Escape") { e.preventDefault(); close(); return; }
+        // Focus trap: closeBtn is the only focusable control in the overlay.
+        if (e.key === "Tab") { e.preventDefault(); closeBtn.focus(); }
+      }
+
+      closeBtn.addEventListener("click", close);
+      // Click the backdrop (but not the image) to dismiss.
+      box.addEventListener("click", function (e) { if (e.target === box) close(); });
+
+      frames.forEach(function (frame) {
+        var shot = visibleShot(frame) || frame.querySelector("img");
+        var name = (shot && shot.getAttribute("alt")) || "";
+        frame.setAttribute("role", "button");
+        frame.setAttribute("tabindex", "0");
+        frame.setAttribute("aria-haspopup", "dialog");
+        frame.setAttribute("aria-label", name ? enlarge + ": " + name : enlarge);
+        frame.classList.add("zoomable");
+        frame.addEventListener("click", function () { open(frame); });
+        frame.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " " || e.key === "Spacebar") {
+            e.preventDefault();
+            open(frame);
+          }
+        });
+      });
+    })();
+  </script> </section> <!-- ===================== TRUST STRIP ===================== --> <section class="trust"> <div class="wrap"> <div class="in"> <p class="kicker"> Built for how restaurants actually run —  <b>from a single koshari window to a multi-branch brand.</b> </p> <div class="chips"> <span class="chip"><span class="tbl"></span>Koshari houses</span><span class="chip"><span class="tbl"></span>Grills</span><span class="chip"><span class="tbl"></span>Seafood</span><span class="chip"><span class="tbl"></span>Cafés</span><span class="chip"><span class="tbl"></span>Cloud kitchens</span><span class="chip"><span class="tbl"></span>Bakeries</span><span class="chip"><span class="tbl"></span>Shawarma</span> </div> <div class="badges"> <span class="badge">Unlimited orders</span><span class="badge">Zero <s class="struck">commission</s></span><span class="badge">Arabic & English</span><span class="badge">24/7 AI ordering</span> </div> </div> </div> </section> <!-- ===================== HOW IT WORKS ===================== --> <section class="stage" id="how"> <div class="wrap"> <span class="eyebrow">How it works</span> <h2>From a message to the table — done for you.</h2> <p class="lead"> A customer messages the way they already do. Everything after that — the taking, the ringing, the firing, the tracking — Orderlya runs on its own. You watch it happen. </p> <div class="steps"> <div class="step"> <div class="no">01</div> <span class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" role="img" aria-hidden="true" data-icon="ask" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.4a2 2 0 0 1-2 2H9l-4 3V5.6a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2z"></path></g><path d="M10 8.2a2.1 2.1 0 1 1 2.7 2c-.6.25-1 .7-1 1.3" fill="none" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="11.7" cy="13.3" r="0.85" style="fill:var(--accent)"></circle></svg></span> <h3>Connect your WhatsApp number</h3> <p>Link the WhatsApp (or Instagram) number your customers already message — no new number, and nothing for them to install.</p> </div><div class="step"> <div class="no">02</div> <span class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" role="img" aria-hidden="true" data-icon="menu" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3.4" width="14" height="17.2" rx="1.6"></rect></g><path d="M8.4 8h7.2M8.4 11.4h7.2M8.4 14.8h4.4" fill="none" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round"></path></svg></span> <h3>Add your menu</h3> <p>Snap a photo or upload a PDF of your existing menu and the AI builds it for you — items, prices and options. One menu that updates your storefront and POS everywhere at once.</p> </div><div class="step"> <div class="no">03</div> <span class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" role="img" aria-hidden="true" data-icon="orders" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.6h12v16.8l-2-1.3-2 1.3-2-1.3-2 1.3-2-1.3-2 1.3z"></path></g><path d="M9 8h6M9 11.4h6" fill="none" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round"></path></svg></span> <h3>Go live and take orders</h3> <p>Switch on and your AI starts taking orders 24/7. Every order lands on your kitchen board and dashboard the moment it&#39;s confirmed — you step in only when it matters.</p> </div> </div> </div> </section> <!-- ===================== FEATURES / WHY ===================== --> <section class="stage band" id="features"> <div class="wrap"> <span class="eyebrow">The platform</span> <h2>Why restaurants choose Orderlya</h2> <div class="fgrid" style="margin-top:36px"> <div class="feat"> <span class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" role="img" aria-hidden="true" data-icon="customers" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="8.4" r="3.2"></circle><path d="M4.6 20c0-3.7 2.9-6.2 6.4-6.2s6.4 2.5 6.4 6.2"></path></g><path d="M18 3.6l.85 1.7 1.9.25-1.37 1.32.33 1.87L18 7.94l-1.7.8.33-1.87L15.26 5.55l1.9-.25z" style="fill:var(--accent)"></path></svg></span> <h3>Own your repeat customers</h3> <p>Delivery aggregators rent you their audience and take 20–30% of every order — and the customer stays theirs, not yours. Orderlya flips that: a flat monthly subscription with zero commission on any sale, while every customer, phone number and order history lives in your own WhatsApp and dashboard. Your regulars come back to you directly, and repeat orders cost you nothing extra.</p> </div><div class="feat"> <span class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" role="img" aria-hidden="true" data-icon="kitchen" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.4 18.6h11.2M6.9 14.9c-2.2-.4-3.6-2.1-3.6-4.2A4.2 4.2 0 0 1 8.4 6.7a4.1 4.1 0 0 1 7.2 0 4.2 4.2 0 0 1 5.1 4c0 2.1-1.4 3.8-3.6 4.2v3.7H6.9z"></path></g><path d="M6.9 14.9h10.2" fill="none" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round"></path></svg></span> <h3>Native operations, not a bot bolted on</h3> <p>This isn&#39;t a chat widget stuck onto your website. A live kitchen display, delivery dispatch with driver tracking, your own branded ordering page (hosted on Orderlya), a POS register, menus, loyalty, cash-on-delivery and reporting all ship in the base — one system that actually runs the restaurant instead of just catching messages.</p> </div><div class="feat"> <span class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" role="img" aria-hidden="true" data-icon="ai" style="--accent: var(--icon-accent, var(--am));"><path d="M11 3.6l1.5 4.4 4.4 1.5-4.4 1.5L11 15.4 9.5 11 5.1 9.5 9.5 8z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17.6 14.2l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z" style="fill:var(--accent); stroke:var(--accent)" stroke-width="1.4" stroke-linejoin="round"></path></svg></span> <h3>Conversational AI in Arabic and English</h3> <p>Your customer orders the way they already talk — a WhatsApp message in Egyptian Arabic or English — and the AI understands it, builds the order, confirms it, and only pulls you in when something needs a human. No app to download, no form to fill: the lowest-friction way a MENA restaurant can take an order, open 24/7.</p> </div> </div> <p style="margin-top:24px"><a href="/orderlya-preview/features" class="btn ghost sm">See all features</a></p> </div> </section> <!-- ===================== AI STORY ===================== --> <section class="stage" id="story"> <div class="wrap"> <div class="ai"> <div class="aigrid"> <div> <span class="eyebrow">The AI front desk</span> <h2>Your AI runs the front desk. You step in only when it matters.</h2> <p class="lead"> Orderlya answers every message the second it lands, takes the order, and confirms it — no missed WhatsApp at the 9pm rush. When something needs a human touch, it hands the conversation to you, then takes it back when you&#39;re done. </p> <ul class="ailist"> <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span><span>Takes orders in Egyptian Arabic or English, around the clock.</span></li> <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span><span>Knows your live menu — won&#39;t sell what&#39;s sold out or quote a wrong price.</span></li> <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span><span>Escalates the tricky ones — a complaint, a special request — straight to your inbox.</span></li> </ul> <p class="honest"> The AI never invents a dish or promises a delivery time it can&#39;t keep — anything it&#39;s unsure of, a person sees. That&#39;s the point of takeover. </p> </div> <div class="inbox"> <div class="ibhead"> <img class="navmark" src="/orderlya-preview/brand/orderlya/orderlya-app-icon.svg" alt="" aria-hidden="true"> <span class="ttl">Inbox <small>· Mariam Adel · WhatsApp</small></span> <span class="takeover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>Karim took over</span> </div> <div class="ibbody"> <div class="imsg in"> <div class>Hi! I'd like to order a large koshari and a sugarcane juice — delivery to Maadi please 🙏</div> </div><div class="imsg ai"> <div class="who">Orderlya AI</div> <div class>Sure! Large koshari (50 EGP) + sugarcane juice (20 EGP) + Maadi delivery 15 EGP = <b>85 EGP</b>. Confirm the order?</div> </div><div class="sysline">Karim joined the conversation · 9:41 pm</div><div class="imsg out"> <div class="who">Karim · Owner</div> <div class>Hi Mariam 👋 Added the extra chili just how you like it 🌶️ your order's on its way now.</div> </div><div class="imsg in"> <div class>Perfect, thanks Karim 🌟</div> </div><div class="sysline">Handed back to Orderlya AI · 9:43 pm</div> </div> </div> </div> </div> </div> </section> <!-- ===================== PRICING TEASER ===================== --> <section class="stage band" id="pricing"> <div class="wrap center"> <span class="eyebrow">Pricing</span> <h2>Unlimited orders. Zero commission.</h2> <p class="lead">Take as many orders as you like on every plan — Orderlya never takes a cut of a sale. Your plan only sets how many orders come in through your AI messaging channels — WhatsApp, Instagram &amp; Messenger — each month; you top that up any time.</p> <p class="pricenote"><b>Unlimited orders · 0% <s class="struck">commission</s></b> · The Omnichannel Inbox is included on every plan.</p> <div class="cur-select" role="group" aria-label="Show prices in" data-astro-cid-2tdw6zmq> <span class="cur-select-label" data-astro-cid-2tdw6zmq>Show prices in</span> <div class="cur-select-btns" data-astro-cid-2tdw6zmq> <button type="button" class="cur-btn is-active" data-cur-btn="EGP" aria-pressed="true" data-testid="cur-btn-EGP" data-astro-cid-2tdw6zmq> EGP </button><button type="button" class="cur-btn" data-cur-btn="USD" aria-pressed="false" data-testid="cur-btn-USD" data-astro-cid-2tdw6zmq> USD </button><button type="button" class="cur-btn" data-cur-btn="SAR" aria-pressed="false" data-testid="cur-btn-SAR" data-astro-cid-2tdw6zmq> SAR </button> </div> </div> <p class="cur-billed-note" data-billed-egp-note data-testid="cur-billed-note" hidden data-astro-cid-2tdw6zmq> Prices shown in your currency; billed in EGP. </p> <script type="module" src="/orderlya-preview/_astro/CurrencySelector.astro_astro_type_script_index_0_lang.kKfNLG5w.js"></script>  <p class="vat-note" data-vat-note data-testid="vat-note" data-astro-cid-yyxdh3ou> All prices include VAT. </p>  <div class="tiers"> <div class="tier">  <div class="name">Start</div> <p class="best-for">Best for a single spot getting orders off WhatsApp &amp; Instagram.</p> <p class="blurb">Turn WhatsApp &amp; Instagram into your busiest, calmest cashier — AI takes the order, you run one screen.</p> <div class="price" data-cur-item="start"><span class="cur" data-cur-sym>EGP</span><span class="num tnum" data-cur-num>850</span><span class="per">/mo</span></div> <div class="incl">Unlimited orders · zero commission — 250 AI-channel orders/mo included</div> <ul class="plan-top"> <li class="lead-in">Everything to take orders in one system — unlimited &amp; commission-free:</li> <li> <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span> AI takes orders 24/7 on WhatsApp, Instagram &amp; Messenger — Arabic or English; confirms, cancels &amp; reorders </li><li> <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span> One shared inbox for every chat channel, with one-tap human takeover </li><li> <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span> Your own branded ordering page (hosted on Orderlya) — menu, cart, checkout, storefront accounts &amp; scheduled orders </li><li> <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span> A live tracking link your customer follows themselves — no app to install </li><li> <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span> Menu live the same day — snap a photo, AI builds it; one edit updates your storefront &amp; POS everywhere </li> </ul> <a class="btn ghost" href="/orderlya-preview/?plan=start#signup" style="margin-top:22px">Choose this plan</a> </div><div class="tier hot"> <span class="flag">Most popular</span> <div class="name">Run</div> <p class="best-for">Best for a busy dine-in + delivery restaurant running the whole floor.</p> <p class="blurb">Everything in Start, plus the full-service floor — kitchen, tables and phone room running as one.</p> <div class="price" data-cur-item="run"><span class="cur" data-cur-sym>EGP</span><span class="num tnum" data-cur-num>1,850</span><span class="per">/mo</span></div> <div class="incl">Unlimited orders · zero commission — 750 AI-channel orders/mo included</div> <ul class="plan-top"> <li class="lead-in">Everything in Start, plus delivery and the full-service floor — kitchen, tables &amp; phone room as one:</li> <li> <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span> Delivery that runs itself — driver app, auto-assign (never the same order twice), live tracking &amp; per-driver cash reconciliation </li><li> <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span> Kitchen Display — every order on the line screen instantly, no paper tickets, nothing missed </li><li> <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span> Dine-in floor — table &amp; seat map, tabs &amp; QR-pay so guests settle up at the table </li><li> <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span> Reservations &amp; waitlist so tables never sit empty </li><li> <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span> Call center — phone orders with the customer&#39;s history &amp; address already on screen </li> </ul> <a class="btn primary" href="/orderlya-preview/?plan=run#signup" style="margin-top:22px">Choose this plan</a> </div><div class="tier">  <div class="name">Scale</div> <p class="best-for">Best for multi-branch brands managing money, stock &amp; every branch.</p> <p class="blurb">Everything in Run, plus the multi-branch brain — money, stock, marketing and every branch in one dashboard. Includes your first branch; add more for EGP 1,250/month each.</p> <div class="price" data-cur-item="scale"><span class="cur" data-cur-sym>EGP</span><span class="num tnum" data-cur-num>2,850</span><span class="per">/mo</span></div> <div class="incl">Unlimited orders · zero commission — 1,500 AI-channel orders/mo included</div> <ul class="plan-top"> <li class="lead-in">Everything in Run, plus the multi-branch brain — money, stock, marketing &amp; every branch in one view:</li> <li> <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span> Brand HQ — every branch in one view: league tables, same-store-sales year-on-year, channel mix &amp; anomaly digest </li><li> <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span> Inventory that protects your margin — recipes → real food cost per dish + an auto sell-out guard that 86s a dish across every channel when you run low </li><li> <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span> Bookkeeping &amp; Egypt VAT-period reports — journal, refunds, CSV export (statutory ETA e-invoice filing is still in preview) </li><li> <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span> Business insights + ask-your-data copilot — best-sellers, slow days, cohorts, exportable dashboards </li><li> <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span> Win-back campaigns — bring slipping customers back with a personal message </li> </ul> <a class="btn ghost" href="/orderlya-preview/?plan=scale#signup" style="margin-top:22px">Choose this plan</a> </div> </div> <p class="lead center" style="margin-top:24px">The monthly number below is your AI-channel allowance — orders that come in through WhatsApp, Instagram &amp; Messenger, and they still count if you take over the chat yourself. Orders your team rings up on the POS, at the table, over the phone, or that come from an aggregator are always free and unlimited.</p> <p style="margin-top:12px"><a href="/orderlya-preview/pricing">See full pricing →</a></p> </div> </section> <!-- ===================== FAQ TEASER ===================== --> <section class="stage"> <div class="wrap"> <span class="eyebrow">Common questions</span> <h2>Frequently asked questions</h2> <div class="faq-list"> <div class="faq-item"> <h3>What platform can I use to take my restaurant&#39;s orders on WhatsApp?</h3> <p>Orderlya is an AI-powered, WhatsApp-first ordering platform for MENA restaurants — an AI agent takes and confirms your customers&#39; orders inside WhatsApp in Arabic or English, your kitchen sees them instantly, and delivery runs itself. 14-day free trial, no credit card.</p> </div><div class="faq-item"> <h3>How long does setup take?</h3> <p>Most restaurants are live the same day. Connect the WhatsApp number your customers already use, add your menu (snap a photo and the AI builds it), and switch on — no long onboarding, and nothing for your customers to install.</p> </div><div class="faq-item"> <h3>Do I need a new WhatsApp number?</h3> <p>No. You can keep the WhatsApp number your customers already message — there&#39;s nothing new for them to install or learn.</p> </div> </div> <p style="margin-top:20px"><a href="/orderlya-preview/faq">Read all FAQs →</a></p> </div> </section> <!-- ===================== SIGNUP FUNNEL ===================== --> <section class="stage band" id="signup"> <div class="wrap center signup-wrap"> <span class="eyebrow">Start your free trial</span> <h2>Start in minutes</h2> <p class="lead" style="margin-bottom:28px">Take as many orders as you like on every plan — Orderlya never takes a cut of a sale. Your plan only sets how many orders come in through your AI messaging channels — WhatsApp, Instagram &amp; Messenger — each month; you top that up any time.</p> <!-- Auth-aware signup (primary fix): when a returning operator ALREADY has a session
+     on this same-origin site (localStorage['crm_token'] — the SAME detection the header
+     "My Dashboard" nav uses via ../lib/navAuth, rule #0a), the fresh signup form is a
+     dead-end (their email already has an account → 400 → retries → rate-limit trap).
+     Instead we reveal this short "you're signed in" state (Dashboard + Upgrade) and hide
+     the form. Server-rendered HIDDEN; a bundled module below flips it on when a session
+     exists. Because the form stays hidden in that case, signup_started / trial_signup are
+     never emitted for a signed-in visitor. --><div id="signed-in-state" class="card" hidden style="max-width:560px;gap:1rem;"> <h3 style="margin:0">You&#39;re signed in</h3> <p class="hint" style="margin:0">You already have an Orderlya account. Jump back into your dashboard, or upgrade your plan.</p> <a href="/orderlya-preview/home" class="btn btn-primary" style="width:100%;text-align:center">Go to Dashboard</a> <a href="/orderlya-preview/billing" class="btn" style="width:100%;text-align:center">Upgrade your plan</a> </div> <form id="trial-form" class="card" style="max-width:560px;gap:1rem;"> <p class="incl" style="margin:0">Unlimited orders · zero <s class="struck">commission</s> · 14-day free trial · no <s class="struck">card</s></p> <!-- #86: restaurant name FIRST — captured BEFORE any Google click, above the button
+       (A-11 / StageAccount parity). The old order (Google button on top, name below)
+       was the reported trap. --> <label class="field"> <span>Restaurant name</span> <!-- `id` is load-bearing for the autofill CLASS GUARD, not for this component's
+         script (which selects by `name`). `autocomplete="organization"` here is CORRECT
+         and INTENTIONAL — this is the public signup form and the value is the genuine
+         owner's OWN restaurant name, so Chrome remembering it is the capability, not the
+         defect (D1: do not "fix" it to `off`). But a capturable token on an id-LESS field
+         can never be named by a per-field exception, so it can never be sanctioned or
+         audited individually. The id is what makes that ruling possible. Founder ruling
+         2026-08-08. --> <input id="trial-company-name" name="company_name" required autocomplete="organization" aria-describedby="company-name-err"> <span class="hint" id="company-name-err" role="alert" style="color:var(--errink);margin:0"></span> </label> <!-- #225 country picker: an EXPLICIT country/locale choice at the START of onboarding
+       (founder directive). The selected country seeds the tenant's currency/timezone/VAT
+       on the backend (POST /auth/public-signup `country`; EG default = byte-identical to
+       today). IP-geo may PREFILL it (via the browser timezone heuristic in the script
+       below) but the owner consciously confirms/changes — a first-class field, never a
+       silent default. --> <label class="field"> <span>Country</span> <select name="country" id="country-select" autocomplete="country"> <option value="EG">Egypt</option> <option value="SA">Saudi Arabia</option> </select> </label> <!-- GIS renders its own button here; hidden until a client ID resolves. --> <div id="google-wrap" style="display:none"> <div id="google-btn-container"></div> <div class="or-divider">or</div> </div> <!-- #169 select-once: the plan carried from the pricing card, shown as a PRE-SELECTED,
+       editable chip (not a fresh 3-way radio group — that was the "chosen twice" complaint).
+       The real POST value is the hidden `tier` input; "Change" reveals the compact <select>. --> <div id="plan-chip" class="plan-chip"> <span class="chip-label"> <span class="chip-key">Plan:</span> <span id="chip-name"></span> <span class="chip-price" id="chip-price"></span> </span> <span class="chip-default" id="chip-default" hidden>Most popular</span> <!-- `autocomplete="off"` — REQUIRED, not decorative. A hidden input IS submitted with
+         the form, so it is inside the autofill class guard's population; the earlier
+         "hidden inputs are excluded as a class" reading was falsified by a critic (a
+         planted hidden cross-tenant field went GREEN under that exclusion and RED
+         without it), so `hidden` is back IN and this field needs a real declaration.
+         The value is an APPLICATION-authored plan slug (`start`/`run`/`scale`) written by
+         the chip/#plan-select script — never the customer's own data — so `off` is the
+         correct token and an identity token here would be a defect. --> <input type="hidden" name="tier" id="tier-input" autocomplete="off" value="run"> <button type="button" class="chip-change" id="chip-change" aria-expanded="false" aria-controls="plan-select">Change</button> <select class="plan-chip-select" id="plan-select" hidden aria-label="Choose your plan"> <option value="start" data-edition-id="start"> Start — EGP 850/mo </option><option value="run" data-edition-id="run"> Run — EGP 1,850/mo </option><option value="scale" data-edition-id="scale"> Scale — EGP 2,850/mo </option> </select> </div> <p class="plan-chip-framing" id="plan-framing"></p> <p class="vat-note plan-chip-vat" data-vat-note data-testid="vat-note" data-astro-cid-yyxdh3ou> All prices include VAT. </p>  <label class="field"> <span>Email or phone</span> <!-- Same as #trial-company-name: `autocomplete="email"` is the owner's OWN address on
+         a public signup form and STAYS. The id exists so the token can be sanctioned by
+         name in the autofill class guard's per-field exception ledger. --> <input id="trial-contact" name="contact" required inputmode="email" autocomplete="email" aria-describedby="contact-hint"> <span class="hint" id="contact-hint">We&#39;ll send a verification link or code.</span> </label> <label class="field" id="pw-wrap" hidden> <span>Password</span> <!-- Third id-less field in this form. Its `new-password` token is already
+         capture-safe, so unlike the two above it needs no sanction today; the id is here
+         so the field is AUDITABLE by name rather than anonymous if that ever changes. --> <input id="trial-password" name="password" type="password" minlength="8" autocomplete="new-password" aria-describedby="pw-hint"> <span class="hint" id="pw-hint">At least 8 characters (email sign-up only).</span> </label> <button type="submit" class="btn btn-primary" style="width:100%">Start free trial</button> <p class="no-card" style="margin:0">Unlimited orders · zero <s class="struck">commission</s> · 14-day free trial · no <s class="struck">card</s></p> <p id="trial-msg" role="status" aria-live="polite" style="margin:0"></p> <!-- Never-dead-end affordance (fix B): shown alongside ANY terminal signup message —
+       a submitted email (202 "check your inbox") OR a mapped error. A returning user whose
+       email already has an account is otherwise stranded (the endpoint stays deliberately
+       GENERIC to avoid account-enumeration, so we can't CONFIRM the email exists — this line
+       asserts nothing about that, it just always offers the log-in path). --> <p id="trial-fallback" role="status" hidden style="margin:0"> <span>Already have an account?</span> <a href="/orderlya-preview/home" id="trial-login-link">Log in / Go to Dashboard</a> </p> </form> <!-- #86: phone-OTP entry step. A phone signup returns 202 (code sent); this step lets
+     the owner enter the 6-digit code and completes to /setup via /auth/public-signup/
+     verify-phone (reusing the existing endpoint — rule #0a). Hidden until the phone 202
+     arrives; the main form is hidden while it shows. --> <div id="otp-step" class="card" hidden style="max-width:560px;gap:1rem;"> <h3 style="margin:0">Enter the code we sent</h3> <p class="hint" style="margin:0">We texted a 6-digit code to your phone.</p> <label class="field"> <span>Verification code</span> <input id="otp-code" name="otp_code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]*"> </label> <button type="button" id="otp-submit" class="btn btn-primary" style="width:100%">Verify &amp; start trial</button> <p id="otp-msg" role="status" aria-live="polite" style="margin:0"></p> </div> <script>(function(){const apiBase = "";
+const trialDays = 14;
+const msgOk = "Check your inbox / phone to verify and start your 14-day trial.";
+const msgError = "Could not reach the signup service. Please try again.";
+const msgUnconfigured = "Google sign-in isn't configured yet — use email or phone below.";
+const msgOtpError = "Incorrect or expired code. Please try again.";
+const localeCode = "en";
+const buildClientId = "";
+const planData = [{"id":"start","tier":"start","name":"Start","priceLabel":"EGP 850/mo","featured":false},{"id":"run","tier":"run","name":"Run","priceLabel":"EGP 1,850/mo","featured":true},{"id":"scale","tier":"scale","name":"Scale","priceLabel":"EGP 2,850/mo","featured":false}];
+const defaultPlanId = "run";
+const framingTpl = "Start free — you're on {plan}, change anytime.";
+
+  (function () {
+    var form = document.getElementById("trial-form");
+    if (!form) return;
+    var msg = document.getElementById("trial-msg");
+    var fallbackEl = document.getElementById("trial-fallback");
+    // Reveal the "Already have an account? Log in" affordance so a returning user is never
+    // dead-ended. Called on any TERMINAL form outcome (email 202 or a mapped error).
+    // Asserts nothing about whether the email exists (no-enumeration preserved).
+    function showFallback() {
+      if (fallbackEl) fallbackEl.hidden = false;
+    }
+    var pwWrap = document.getElementById("pw-wrap");
+    var contact = form.querySelector('input[name="contact"]');
+    var otpStep = document.getElementById("otp-step");
+    var otpCodeEl = document.getElementById("otp-code");
+    var otpSubmitEl = document.getElementById("otp-submit");
+    var otpMsg = document.getElementById("otp-msg");
+    // Phone-OTP challenge id (the company id the backend returns on the phone 202).
+    var otpChallengeId = null;
+
+    // #86: shared success handoff (mirrors the Google branch) — PERSIST the returned
+    // session token to localStorage['crm_token'] BEFORE navigating so the operator
+    // RequireAuth guard does not bounce the freshly-created owner. Used by BOTH the
+    // Google inline path and the phone-OTP completion.
+    function persistAndGo(data, method) {
+      try {
+        if (data && data.access_token) localStorage.setItem("crm_token", data.access_token);
+        localStorage.setItem("crm_company_name", (data && data.company_name) || "");
+        localStorage.setItem("crm_company_id", (data && data.company_id) || "");
+      } catch (e) {}
+      // trial_signup — PRIMARY conversion, fired at the REAL success point (a Company +
+      // owner + trial were just minted and we hold the JWT), on THIS marketing page where
+      // the Google Ads gtag IS loaded. Covers the two paths that complete client-side:
+      // Google one-tap + phone-OTP. (The EMAIL path completes later on the server verify
+      // link, which fires its own gtag conversion — see auth.py _verify_link_success_html.)
+      try {
+        if (window.orderlyaTrack)
+          window.orderlyaTrack("trial_signup", { locale: localeCode, method: method || "unknown" });
+      } catch (e) {}
+      var dest = data && data.redirect ? data.redirect : "/setup";
+      if (dest.indexOf("http") !== 0 && apiBase) dest = apiBase + dest;
+      window.location.href = dest;
+    }
+
+    function aid() {
+      try {
+        return localStorage.getItem("orderlya_aid");
+      } catch (e) {
+        return null;
+      }
+    }
+    // #169 select-once carry: the tier is held in the hidden #tier-input (set by the chip),
+    // NOT a radio group. selectedTier() reads that single source of truth.
+    var tierInput = document.getElementById("tier-input");
+    function selectedTier() {
+      return tierInput ? tierInput.value : null;
+    }
+    // #225 country: the explicit country/locale pick posted to /auth/public-signup. Defaults
+    // to EG (byte-identical to today); an IP-geo/browser hint may PREFILL it but the owner
+    // confirms. selectedCountry() is the single source of truth the payloads read.
+    var countryEl = document.getElementById("country-select");
+    function selectedCountry() {
+      return countryEl && countryEl.value ? countryEl.value : "EG";
+    }
+    // Best-effort PREFILL from the available client-side geo signal (browser timezone) —
+    // a Riyadh/Makkah zone pre-selects Saudi Arabia; anything else stays on the EG default.
+    // The rendered markup default is ALWAYS EG, so this only nudges the pre-selection.
+    try {
+      var _tz = (Intl.DateTimeFormat().resolvedOptions().timeZone || "");
+      if (countryEl && /Riyadh|Mecca|Makkah|Saudi/i.test(_tz)) countryEl.value = "SA";
+    } catch (e) {}
+    var nameEl = form.querySelector('input[name="company_name"]');
+    var nameErrEl = document.getElementById("company-name-err");
+
+    // Flatten a FastAPI `detail` (string OR array of {loc,msg,type} for 422 OR object)
+    // into a human string — mirrors static/index.html::_authErrText so a 422 never
+    // renders as "[object Object]".
+    function authErrText(detail, fallback) {
+      if (detail == null || detail === "") return fallback;
+      if (typeof detail === "string") return detail;
+      if (Array.isArray(detail)) {
+        return (
+          detail
+            .map(function (dd) {
+              return dd && dd.msg ? dd.msg : typeof dd === "string" ? dd : JSON.stringify(dd);
+            })
+            .join("; ") || fallback
+        );
+      }
+      if (typeof detail === "object") return detail.msg || detail.message || JSON.stringify(detail);
+      return String(detail);
+    }
+    // Map a non-ok auth response to an actionable, per-status message (A-09) — never the
+    // blanket "pending" line. 501 ⇒ Google-not-configured; 422/400 ⇒ the server detail.
+    function mapAuthError(status, data) {
+      if (status === 501) return msgUnconfigured;
+      return authErrText(data && data.detail, msgError);
+    }
+
+    // Clear the inline restaurant-name guard once the field is filled.
+    if (nameEl) {
+      nameEl.addEventListener("input", function () {
+        if (nameErrEl && String(nameEl.value || "").trim()) nameErrEl.textContent = "";
+      });
+    }
+
+    // L2 funnel event: fire a first-party signup_started beacon (no consent gate).
+    function trackStart(method) {
+      try {
+        var body = JSON.stringify({
+          event_name: "signup_started",
+          anonymous_id: aid(),
+          locale: localeCode,
+          properties: { edition: selectedTier(), method: method },
+        });
+        var url = apiBase + "/beacon";
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon(url, new Blob([body], { type: "application/json" }));
+        } else {
+          fetch(url, { method: "POST", body: body, headers: { "Content-Type": "application/json" }, keepalive: true });
+        }
+      } catch (e) {}
+    }
+
+    // ── #169 select-once plan chip ────────────────────────────────────────────────
+    // ONE carried selection: the plan chosen on the pricing/home card → chip → submit.
+    // Read order: ?plan=<id> in the REAL search, then a hash-query fallback (older links
+    // used the fragment), then ?edition=<id> (legacy param name), then
+    // sessionStorage['orderlya_plan'] (survives reload/back), else the explicit default.
+    var PLAN_KEY = "orderlya_plan";
+    var chipNameEl = document.getElementById("chip-name");
+    var chipPriceEl = document.getElementById("chip-price");
+    var chipDefaultEl = document.getElementById("chip-default");
+    var chipChangeEl = document.getElementById("chip-change");
+    var planSelectEl = document.getElementById("plan-select");
+    var planFramingEl = document.getElementById("plan-framing");
+
+    function planById(id) {
+      for (var i = 0; i < planData.length; i++) if (planData[i].id === id) return planData[i];
+      return null;
+    }
+    function planParamFromUrl() {
+      try {
+        var qs = new URLSearchParams(location.search);
+        var want = qs.get("plan") || qs.get("edition");
+        if (!want && location.hash.indexOf("?") !== -1) {
+          var hq = new URLSearchParams(location.hash.slice(location.hash.indexOf("?") + 1));
+          want = hq.get("plan") || hq.get("edition");
+        }
+        return want && planById(want) ? want : null;
+      } catch (e) {
+        return null;
+      }
+    }
+    function storedPlan() {
+      try {
+        var s = sessionStorage.getItem(PLAN_KEY);
+        return s && planById(s) ? s : null;
+      } catch (e) {
+        return null;
+      }
+    }
+    // Render the chip for a plan id. `isDefault` = we fell back to the default with no
+    // carried selection ⇒ show the explicit "Most popular" badge so it's never silent.
+    function renderPlan(id, isDefault) {
+      var p = planById(id) || planById(defaultPlanId);
+      if (!p) return;
+      if (tierInput) tierInput.value = p.tier;
+      if (chipNameEl) chipNameEl.textContent = p.name;
+      if (chipPriceEl) chipPriceEl.textContent = p.priceLabel;
+      if (chipDefaultEl) chipDefaultEl.hidden = !isDefault;
+      if (planSelectEl) planSelectEl.value = p.tier;
+      if (planFramingEl) planFramingEl.textContent = String(framingTpl).replace("{plan}", p.name);
+      try {
+        sessionStorage.setItem(PLAN_KEY, p.id);
+      } catch (e) {}
+    }
+    // Once the user EXPLICITLY changes the plan, that choice is authoritative — a later
+    // hashchange (in-page anchor / `#` nav) must NOT re-read the still-present ?plan= param
+    // and silently revert the submitted tier (billing-critical: the POST must always carry
+    // the user's last explicit choice).
+    var userChose = false;
+    function applyPlan() {
+      if (userChose) return;
+      var fromUrl = planParamFromUrl();
+      if (fromUrl) {
+        renderPlan(fromUrl, false);
+      } else {
+        var stored = storedPlan();
+        renderPlan(stored || defaultPlanId, !stored);
+      }
+    }
+    applyPlan();
+    window.addEventListener("hashchange", applyPlan);
+    // "Change" reveals the compact select; picking a plan updates the chip (explicit choice,
+    // so drop the default badge) and hides the select again.
+    if (chipChangeEl && planSelectEl) {
+      chipChangeEl.addEventListener("click", function () {
+        var show = planSelectEl.hidden;
+        planSelectEl.hidden = !show;
+        chipChangeEl.setAttribute("aria-expanded", show ? "true" : "false");
+        if (show && planSelectEl.focus) planSelectEl.focus();
+      });
+      planSelectEl.addEventListener("change", function () {
+        var opt = planSelectEl.options[planSelectEl.selectedIndex];
+        var id = opt ? opt.getAttribute("data-edition-id") : null;
+        if (id) {
+          userChose = true; // explicit choice — wins over any stale ?plan= on later hashchange
+          renderPlan(id, false);
+        }
+        planSelectEl.hidden = true;
+        chipChangeEl.setAttribute("aria-expanded", "false");
+      });
+    }
+
+    // Progressive password: show only when the contact looks like an email.
+    function syncPw() {
+      var isEmail = String(contact.value || "").indexOf("@") !== -1;
+      if (pwWrap) pwWrap.hidden = !isEmail;
+    }
+    contact.addEventListener("input", syncPw);
+    syncPw();
+
+    // signup_started — funnel diagnostic fired ONCE per session on first FOCUS of the
+    // email/phone field (the true funnel start, earlier than the submit-time first-party
+    // beacon above). Fans to posthog + Google Ads gtag via the lib/track.ts seam. No PII —
+    // only locale + method context, never the typed value.
+    var STARTED_KEY = "orderlya_signup_started_fired";
+    function signupStartedOnce() {
+      try {
+        if (sessionStorage.getItem(STARTED_KEY) === "1") return;
+        sessionStorage.setItem(STARTED_KEY, "1");
+      } catch (e) {
+        /* private-mode safe — fall through and fire once per page instead */
+        if (signupStartedOnce._fired) return;
+        signupStartedOnce._fired = true;
+      }
+      try {
+        if (window.orderlyaTrack)
+          window.orderlyaTrack("signup_started", { locale: localeCode, method: "focus" });
+      } catch (e) {}
+    }
+    contact.addEventListener("focus", signupStartedOnce);
+
+    // ── Google Identity Services (GIS) client-side flow ──────────────────────
+    // GIS returns a credential (id_token); we POST it as JSON to /auth/google along
+    // with the chosen edition + company name + anon id. No redirect endpoint is used.
+    async function onGoogleCredential(response) {
+      var idToken = response && response.credential;
+      if (!idToken) return;
+      var companyName = String((nameEl && nameEl.value) || "").trim();
+      if (!companyName) {
+        // Backend requires company_name for a new registration — surface the guard
+        // INLINE next to the field (A-11), not only on the small status line.
+        var nameMsg = localeCode === "ar" ? "أدخل اسم المطعم أولًا." : "Enter your restaurant name first.";
+        if (nameErrEl) nameErrEl.textContent = nameMsg;
+        msg.textContent = nameMsg;
+        if (nameEl) nameEl.focus();
+        return;
+      }
+      trackStart("google");
+      msg.textContent = "…";
+      var payload = {
+        id_token: idToken,
+        company_name: companyName,
+        tier: selectedTier(),
+        country: selectedCountry(),
+        anonymous_id: aid(),
+      };
+      try {
+        var res = await fetch(apiBase + "/auth/google", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        var data = await res.json().catch(function () {
+          return {};
+        });
+        if (res.ok) {
+          // SAME-ORIGIN (the marketing site now ships INSIDE the app deploy). The
+          // server already minted the Company + owner + trialing sub and returned a
+          // JWT — PERSIST the session token BEFORE navigating (persistAndGo), or the
+          // operator RequireAuth guard bounces the freshly-created owner straight back
+          // to the sign-in surface (A-01/A-02).
+          msg.textContent = msgOk;
+          persistAndGo(data, "google");
+        } else {
+          // Actionable per-status error (A-09): 501 Google-not-configured, else the
+          // server detail (422 bad tier / 400 bad request).
+          msg.textContent = mapAuthError(res.status, data);
+          showFallback();
+        }
+      } catch (e) {
+        msg.textContent = msgError;
+        showFallback();
+      }
+    }
+
+    function initGoogle(clientId) {
+      if (!clientId || !window.google || !google.accounts || !google.accounts.id) return;
+      try {
+        google.accounts.id.initialize({
+          client_id: clientId,
+          callback: onGoogleCredential,
+          auto_select: false,
+          cancel_on_tap_outside: true,
+        });
+        var container = document.getElementById("google-btn-container");
+        if (container) {
+          google.accounts.id.renderButton(container, {
+            type: "standard",
+            theme: "outline",
+            size: "large",
+            width: 320,
+            text: "continue_with",
+            logo_alignment: "left",
+          });
+        }
+        var wrap = document.getElementById("google-wrap");
+        if (wrap) wrap.style.display = "";
+      } catch (e) {}
+    }
+
+    function loadGis(clientId) {
+      if (!clientId) return; // no client ID ⇒ Google option stays hidden (email/phone works)
+      var s = document.createElement("script");
+      s.src = "https://accounts.google.com/gsi/client";
+      s.async = true;
+      s.defer = true;
+      s.onload = function () {
+        initGoogle(clientId);
+      };
+      document.head.appendChild(s);
+    }
+
+    // Resolve the client ID: build-time PUBLIC_GOOGLE_CLIENT_ID, else /auth/config.
+    if (buildClientId) {
+      loadGis(buildClientId);
+    } else {
+      fetch(apiBase + "/auth/config")
+        .then(function (r) {
+          return r.json();
+        })
+        .then(function (cfg) {
+          loadGis(cfg && cfg.google_client_id);
+        })
+        .catch(function () {});
+    }
+
+    form.addEventListener("submit", async function (ev) {
+      ev.preventDefault();
+      var fd = new FormData(form);
+      var c = String(fd.get("contact") || "").trim();
+      var isEmail = c.indexOf("@") !== -1;
+      trackStart(isEmail ? "email" : "phone");
+      var payload = { company_name: fd.get("company_name"), tier: fd.get("tier"), country: selectedCountry(), anonymous_id: aid() };
+      if (isEmail) {
+        payload.email = c;
+        payload.password = fd.get("password");
+      } else {
+        payload.phone = c;
+      }
+      msg.textContent = "…";
+      try {
+        var res = await fetch(apiBase + "/auth/public-signup", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        var data = await res.json().catch(function () {
+          return {};
+        });
+        if (res.status === 202 || res.ok) {
+          // 202 = phone pending_verification. 200 + access_token = EMAIL C-JWT session.
+          //  - EMAIL (C-JWT, onboarding-v1 P2-A): the signup now mints a pre-verify
+          //    SESSION (200 + access_token) so the owner lands AUTHENTICATED on /setup
+          //    exactly as google/phone do. We stash the pending-verify handoff
+          //    (challenge_id + destination email) for the operator VerifyPopup, which
+          //    clears the moment the emailed LINK is clicked or the 6-digit CODE is
+          //    pasted — no dead-end "check your inbox" wait.
+          //  - PHONE: reveal the inline OTP-entry step (unchanged; #86, PAR-1).
+          if (isEmail && data && data.access_token) {
+            try {
+              localStorage.setItem(
+                "crm_pending_verify",
+                JSON.stringify({
+                  challenge_id: (data && data.challenge_id) || "",
+                  email: payload.email || "",
+                  verify: "email",
+                }),
+              );
+            } catch (e) {}
+            persistAndGo(data, "email");
+          } else if (!isEmail && data && data.challenge_id) {
+            otpChallengeId = data.challenge_id;
+            msg.textContent = "";
+            if (form) form.hidden = true;
+            if (otpStep) otpStep.hidden = false;
+            if (otpCodeEl) otpCodeEl.focus();
+          } else {
+            // EMAIL without a session token: a returning user whose email already exists
+            // (the endpoint is deliberately generic) — always offer the log-in path so
+            // they're never stranded waiting for an email that won't come.
+            msg.textContent = msgOk;
+            showFallback();
+          }
+        } else {
+          // Actionable per-status error (A-09) instead of the blanket pending line.
+          msg.textContent = mapAuthError(res.status, data);
+          showFallback();
+        }
+      } catch (e) {
+        msg.textContent = msgError;
+        showFallback();
+      }
+    });
+
+    // ── Phone-OTP completion ─────────────────────────────────────────────────────
+    // POST the entered code + the server-issued challenge_id to the EXISTING verify
+    // endpoint (rule #0a); on success the backend mints the trial + returns a JWT which
+    // we persist before forwarding to /setup — same handoff as the Google path.
+    if (otpSubmitEl) {
+      otpSubmitEl.addEventListener("click", async function () {
+        var code = String((otpCodeEl && otpCodeEl.value) || "").trim();
+        if (!code || !otpChallengeId) {
+          if (otpMsg) otpMsg.textContent = msgOtpError;
+          return;
+        }
+        if (otpMsg) otpMsg.textContent = "…";
+        try {
+          var res = await fetch(apiBase + "/auth/public-signup/verify-phone", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ challenge_id: otpChallengeId, code: code, anonymous_id: aid() }),
+          });
+          var data = await res.json().catch(function () {
+            return {};
+          });
+          if (res.ok) {
+            if (otpMsg) otpMsg.textContent = msgOk;
+            persistAndGo(data, "phone");
+          } else {
+            // 400 = wrong/expired code — actionable, not a dead-end.
+            if (otpMsg) otpMsg.textContent = authErrText(data && data.detail, msgOtpError);
+          }
+        } catch (e) {
+          if (otpMsg) otpMsg.textContent = msgError;
+        }
+      });
+    }
+  })();
+})();</script> <!-- Auth-aware toggle (BUNDLED module → runs after DOM parse). Reuses the SHARED
+     ../lib/navAuth `hasSession` seam — the EXACT detection the header "My Dashboard" nav
+     uses (rule #0a: one auth check, not a second copy). When an operator session exists on
+     this same-origin site, hide the signup form + OTP step and reveal the "you're signed in"
+     state. Because the form is hidden in that case, its focus/submit listeners never fire, so
+     signup_started / trial_signup are NOT emitted for a signed-in visitor. Logged-out is the
+     server-rendered default (form visible, signed-in state hidden). --> <script type="module" src="/orderlya-preview/_astro/TrialForm.astro_astro_type_script_index_0_lang.7ocj6Ves.js"></script> </div> </section> <section class="section cta-band"> <div class="wrap"> <div class="band-cta"> <span class="ord-mark bmark" style="--mark-size:280px" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512" role="img" aria-label="Orderlya mark">
+  <circle cx="50" cy="50" r="30" fill="var(--ord-saffron, #E0A43B)" fill-opacity="0.12"></circle>
+  <circle cx="71.21" cy="24.72" r="6.5" fill="currentColor"></circle>
+  <circle cx="82.50" cy="44.27" r="6.5" fill="currentColor"></circle>
+  <circle cx="61.29" cy="81.01" r="6.5" fill="currentColor"></circle>
+  <circle cx="38.71" cy="81.01" r="6.5" fill="currentColor"></circle>
+  <circle cx="17.50" cy="44.27" r="6.5" fill="currentColor"></circle>
+  <circle cx="28.79" cy="24.72" r="6.5" fill="currentColor"></circle>
+  <circle cx="50.00" cy="17.00" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+  <circle cx="78.58" cy="66.50" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+  <circle cx="21.42" cy="66.50" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+</svg>
+</span>  <div class="rel"> <h2>Start taking orders — done for you — today</h2> <p>Orderlya — the WhatsApp ordering platform for MENA restaurants.</p> <div class="cta"> <a href="/orderlya-preview/#signup" class="btn primary"> Start free trial <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg> </a> <a href="/orderlya-preview/pricing" class="btn ghost">Pricing</a> </div> <p class="fine">Unlimited orders · zero commission · 14-day free trial · no card</p> </div> </div> </div> </section>  </main> <footer class="site-footer"> <div class="wrap"> <div class="foot"> <div class="brandcol"> <span class="word wm-inline wm-footer" style="--wm-h:38px" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 116" width="432" height="116" role="img" aria-label="Orderlya logo full">
+  <g transform="translate(2 12) scale(0.92)">
+    <circle cx="50" cy="50" r="30" fill="var(--ord-saffron, #E0A43B)" fill-opacity="0.12"></circle>
+    <circle cx="71.21" cy="24.72" r="6.5" fill="currentColor"></circle>
+    <circle cx="82.50" cy="44.27" r="6.5" fill="currentColor"></circle>
+    <circle cx="61.29" cy="81.01" r="6.5" fill="currentColor"></circle>
+    <circle cx="38.71" cy="81.01" r="6.5" fill="currentColor"></circle>
+    <circle cx="17.50" cy="44.27" r="6.5" fill="currentColor"></circle>
+    <circle cx="28.79" cy="24.72" r="6.5" fill="currentColor"></circle>
+    <circle cx="50.00" cy="17.00" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+    <circle cx="78.58" cy="66.50" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+    <circle cx="21.42" cy="66.50" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+  </g>
+  <text x="100" y="84" font-family="'Bricolage Grotesque Variable','Bricolage Grotesque','Arial Black',sans-serif" font-size="74" font-weight="700" letter-spacing="-3.5" fill="currentColor">Order<tspan fill="var(--brand-lya, #B0472B)">lya</tspan></text>
+</svg>
+</span>  <p>Orderlya — the WhatsApp ordering platform for MENA restaurants.</p> <a href="/orderlya-preview/#signup" class="btn primary sm">Start your free trial</a> </div> <div class="fcol"> <h3>Product</h3> <a href="/orderlya-preview/features">Features</a><a href="/orderlya-preview/pricing">Pricing</a><a href="/orderlya-preview/compare">Compare</a><a href="/orderlya-preview/vs-delivery-aggregators">vs delivery aggregators</a> </div> <div class="fcol"> <h3>Solutions</h3> <a href="/orderlya-preview/whatsapp-ordering-egypt">WhatsApp ordering</a><a href="/orderlya-preview/ai-ordering">AI order-taking</a><a href="/orderlya-preview/commission-free-egypt">Commission-free</a><a href="/orderlya-preview/compare/foodics-alternative-egypt">Foodics alternative</a><a href="/orderlya-preview/compare/talabat-alternative-egypt">Talabat alternative</a><a href="/orderlya-preview/compare/elmenus-alternative-egypt">Elmenus alternative</a><a href="/orderlya-preview/compare/sapaad-alternative-egypt">Sapaad alternative</a><a href="/orderlya-preview/features/kitchen-display-system">Kitchen Display System</a><a href="/orderlya-preview/features/accounting-eta">Accounting &amp; ETA</a><a href="/orderlya-preview/features/inventory">Inventory</a><a href="/orderlya-preview/features/signals">Signals</a> </div> <div class="fcol"> <h3>Company</h3> <a href="/orderlya-preview/blog">Blog</a><a href="/orderlya-preview/about">About</a><a href="/orderlya-preview/faq">FAQ</a><a href="/orderlya-preview/legal">Terms &amp; Privacy</a><a href="/orderlya-preview/contact">Contact us</a> </div> <div class="fcol"> <h3>Start free trial</h3> <a href="/orderlya-preview/#signup">Start your free trial</a> <p class="placeholder">No credit card to start. Cancel any time during your 14-day trial.</p> </div> </div> <div class="foot-bottom"> <span>© 2026 Orderlya. All rights reserved.</span> <nav class="foot-social" aria-label="Follow us"> <a href="https://www.linkedin.com/company/orderlya" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Orderlya on LinkedIn" title="Orderlya on LinkedIn"> <!-- No brand-set LinkedIn glyph yet; clean inline SVG matches the Icon.astro
+               stroke style (currentColor body + themed --accent detail). --> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-hidden="true" style="--accent: var(--icon-accent, var(--am));"> <rect x="3.6" y="3.6" width="16.8" height="16.8" rx="4" stroke="currentColor" stroke-width="1.7"></rect> <path d="M7.4 10.2v6.2M7.4 7.5v.02" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"></path> <path d="M11 16.4v-6.2M11 12.6c0-1.5 1-2.4 2.4-2.4 1.5 0 2.4 1 2.4 2.6v3.8" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </a> <a href="https://www.instagram.com/order.lya" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Orderlya on Instagram"> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-label="Orderlya on Instagram" data-icon="instagram" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.6" y="3.6" width="16.8" height="16.8" rx="5"></rect></g><g fill="none" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><circle cx="16.6" cy="7.4" r="0.6"></circle></g></svg> </a> <a href="https://www.facebook.com/orderlya" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Orderlya on Facebook"> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-label="Orderlya on Facebook" data-icon="facebook" style="--accent: var(--icon-accent, var(--am));"><rect x="3.6" y="3.6" width="16.8" height="16.8" rx="4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></rect><path d="M14.6 20.4v-6.1h2l.4-2.6h-2.4V10a1.3 1.3 0 0 1 1.5-1.4h1.1V6.3a14 14 0 0 0-2-.15c-2.05 0-3.4 1.25-3.4 3.5v2h-2.2v2.6h2.2v6.1" fill="none" style="stroke:var(--accent)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg> </a> <a href="https://wa.me/201144083323" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Orderlya on WhatsApp"> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-label="Orderlya on WhatsApp" data-icon="whatsapp" style="--accent: var(--icon-accent, var(--am));"><path d="M4 20l1.15-4.1a7.6 7.6 0 1 1 2.95 2.95z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.4 8.2c-.3 0-.6.1-.85.4-.3.35-.75.85-.75 1.9s.8 2.15 1 2.35c.85 1.15 2 2 3.35 2.5 1.35.5 1.65.35 1.95.3.45-.05 1.15-.5 1.3-.95.15-.45.15-.85.1-.95-.05-.1-.2-.15-.45-.28-.25-.12-1.15-.6-1.35-.65-.2-.08-.3-.1-.45.1-.13.2-.5.63-.6.75-.13.15-.23.15-.43.05" fill="none" style="stroke:var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg> </a> <a href="mailto:hello@orderlya.com" class="soc" aria-label="Email Orderlya"> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-label="Email Orderlya" data-icon="email" style="--accent: var(--icon-accent, var(--am));"><path d="M15.4 12v1.5a2.1 2.1 0 0 0 4.2 0V12a8 8 0 1 0-3.1 6.4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.4 12a3.4 3.4 0 1 0-1 2.4" fill="none" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.4 9.2v5.2" fill="none" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round"></path></svg> </a> </nav> </div> </div> </footer> <div class="oa-widget" dir="ltr" data-api-base data-locale="en" data-astro-cid-pi66rgpr> <button type="button" class="oa-fab" aria-haspopup="dialog" aria-expanded="false" aria-controls="oa-panel" aria-label="Ask Orderlya" data-astro-cid-pi66rgpr> <svg viewBox="0 0 24 24" width="24" height="24" fill="none" role="img" aria-hidden="true" data-icon="chat" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13.5a2 2 0 0 1-2 2H9l-4 3V6a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2z"></path></g><g style="fill:var(--accent)"><circle cx="8.6" cy="9.8" r="1.15"></circle><circle cx="12" cy="9.8" r="1.15"></circle><circle cx="15.4" cy="9.8" r="1.15"></circle></g></svg> <span class="oa-fab-label" data-astro-cid-pi66rgpr>Ask Orderlya</span> </button> <div id="oa-panel" class="oa-panel" role="dialog" aria-modal="false" aria-label="Ask Orderlya" hidden data-astro-cid-pi66rgpr> <header class="oa-head" data-astro-cid-pi66rgpr> <div data-astro-cid-pi66rgpr> <div class="oa-title" data-astro-cid-pi66rgpr> <svg viewBox="0 0 24 24" width="18" height="18" fill="none" class="oa-title-ai" role="img" aria-hidden="true" data-icon="intelligence" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.6a5.6 5.6 0 0 0-3.4 10.1c.6.5 1 1.2 1 2v.3h4.8v-.3c0-.8.4-1.5 1-2A5.6 5.6 0 0 0 12 3.6z"></path><path d="M9.6 19.4h4.8M10.6 21.4h2.8"></path></g><path d="M12 7.2v3.2M12 10.4l-1.8-1.2M12 10.4l1.8-1.2" fill="none" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="11.4" r="1.1" style="fill:var(--accent)"></circle></svg> Ask Orderlya </div> <div class="oa-sub" data-astro-cid-pi66rgpr>Questions about plans, pricing &amp; the free trial</div> </div> <button type="button" class="oa-close" aria-label="Close" data-astro-cid-pi66rgpr>&times;</button> </header>  <div class="oa-log" role="log" aria-live="polite" data-astro-cid-pi66rgpr> <div class="oa-msg oa-bot" data-astro-cid-pi66rgpr>Hi! Ask me about Orderlya&#39;s plans and pricing, how the AI takes your orders, or the free trial.</div> </div> <form class="oa-form" data-astro-cid-pi66rgpr> <label class="oa-visually-hidden" for="oa-input" data-astro-cid-pi66rgpr>Ask a question about Orderlya…</label> <input id="oa-input" class="oa-input" type="text" maxlength="500" autocomplete="off" placeholder="Ask a question about Orderlya…" data-astro-cid-pi66rgpr> <button type="submit" class="oa-send" data-astro-cid-pi66rgpr>Send</button> </form> <div class="oa-turnstile" aria-hidden="true" data-astro-cid-pi66rgpr></div> </div> </div> <script>(function(){const errorText = "Couldn't get an answer right now. Try the FAQ page or start your free trial.";
+const capText = {"thanks":"Thanks! Our team will reach out soon.","thanksAt":"Perfect — we'll reach out at {c}."};
+const sugText = {"prompt":"Got an idea to make Orderlya better? Share it with us.","placeholder":"Type your suggestion…","send":"Send","dismiss":"No thanks","thanks":"Thanks for the idea! Our product team will see it.","empty":"Please type your suggestion first."};
+
+  (function () {
+    var root = document.querySelector(".oa-widget");
+    if (!root) return;
+    var API_BASE = root.getAttribute("data-api-base") || "";
+    // Page locale ("en"/"ar") — sent with the question so the assistant grounds Arabic
+    // answers on the catalog's AUTHORED Arabic feature facts, not a runtime translation.
+    var LOCALE = root.getAttribute("data-locale") || "en";
+    var TS_KEY = "";  // fetched at runtime from GET /public/config (never baked in).
+    var fab = root.querySelector(".oa-fab");
+    var panel = root.querySelector(".oa-panel");
+    var closeBtn = root.querySelector(".oa-close");
+    var form = root.querySelector(".oa-form");
+    var input = root.querySelector(".oa-input");
+    var sendBtn = root.querySelector(".oa-send");
+    var log = root.querySelector(".oa-log");
+    var tsHolder = root.querySelector(".oa-turnstile");
+
+    // Astro SCOPES this component's <style> with a data-astro-cid-* attribute that ONLY
+    // server-rendered nodes carry (e.g. the greeting `.oa-msg.oa-bot`). Chat bubbles and
+    // the lead-capture card are created in JS below, so they must be stamped with the SAME
+    // attribute — otherwise the scoped `.oa-msg / .oa-bot / .oa-user` rules never match and
+    // those nodes render UNSTYLED, which is why AI REPLIES lost their bot bubble and looked
+    // identical to the (also-unstyled) user messages. `newEl()` is the ONE seam every
+    // dynamically-created widget node goes through, so this whole regression class stays
+    // fixed for any future element too (rule 0a-THEME).
+    var scopeAttr = "";
+    var _rootAttrs = root.attributes;
+    for (var _i = 0; _i < _rootAttrs.length; _i++) {
+      if (_rootAttrs[_i].name.indexOf("data-astro-cid-") === 0) { scopeAttr = _rootAttrs[_i].name; break; }
+    }
+    function newEl(tag) {
+      var node = document.createElement(tag);
+      if (scopeAttr) node.setAttribute(scopeAttr, "");
+      return node;
+    }
+
+    // Per-session id (stable within a tab session) — the per-session rate-limit key.
+    var SKEY = "orderlya_ask_sid";
+    var sid;
+    try {
+      sid = sessionStorage.getItem(SKEY);
+      if (!sid) {
+        sid = (crypto && crypto.randomUUID && crypto.randomUUID()) || "sid_" + Date.now() + "_" + Math.random().toString(36).slice(2);
+        sessionStorage.setItem(SKEY, sid);
+      }
+    } catch (e) {
+      sid = "sid_" + Date.now();
+    }
+
+    var tsToken = "";
+    var tsLoaded = false;
+    function renderTurnstile() {
+      if (!TS_KEY || tsLoaded) return;
+      tsLoaded = true;
+      var s = document.createElement("script");
+      s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+      s.async = true;
+      s.defer = true;
+      s.onload = function () {
+        try {
+          if (window.turnstile) {
+            window.turnstile.render(tsHolder, {
+              sitekey: TS_KEY,
+              size: "invisible",
+              callback: function (tok) { tsToken = tok; },
+            });
+          }
+        } catch (e) {}
+      };
+      document.head.appendChild(s);
+    }
+    var cfgFetched = false;
+    function loadTurnstile() {
+      // Fetch the SITE KEY at runtime (rotatable without a rebuild), then render the
+      // invisible challenge. If no key is configured server-side, the bot-gate is off
+      // (the server's budget kill-switch still bounds cost).
+      if (cfgFetched) { renderTurnstile(); return; }
+      cfgFetched = true;
+      fetch(API_BASE + "/public/config")
+        .then(function (r) { return r.ok ? r.json() : {}; })
+        .then(function (cfg) { TS_KEY = (cfg && cfg.turnstile_site_key) || ""; renderTurnstile(); })
+        .catch(function () { /* no key ⇒ gate off; budget cap still enforced */ });
+    }
+
+    function addMsg(text, who) {
+      var el = newEl("div");
+      el.className = "oa-msg " + (who === "user" ? "oa-user" : "oa-bot");
+      el.textContent = text;
+      log.appendChild(el);
+      log.scrollTop = log.scrollHeight;
+      return el;
+    }
+
+    // ── Ask-bot lead capture — ONE ask, reply-based (no double-ask, no nag) ───
+    // The SERVER (the model's offer_capture flag) decides WHEN it is a follow-up-worthy
+    // moment; on that turn the BOT has ALREADY verbally asked, in its answer, for a contact
+    // (prompt rule 7). So the widget does NOT render a second side-field (that would be a
+    // DOUBLE-ask) — instead it ARMS `awaitingContact` and captures the contact from the
+    // visitor's NEXT chat message. `captureOffered` guards it to ONCE per session: after a
+    // capture OR a decline the bot never asks again (no nag loop). EN + AR both work — the
+    // bot asks in the visitor's language and the confirmation uses the localized capText.
+    var captureOffered = false;   // one ask per session (mechanical ask-once guard)
+    var awaitingContact = false;  // the bot just asked; capture the next reply as the contact
+    var lastQuestion = "";        // the Q that triggered the current answer
+    var transcript = [];          // recent turns for sales context (display strings)
+    // Ask-bot overhaul — multi-turn MEMORY: a stable conversation id + structured history the
+    // server threads for context (bounded server-side). Plus the last capture signal so a lead
+    // records WHAT we couldn't deliver + WHY.
+    var convId = sid || ("c" + Date.now() + Math.random().toString(36).slice(2, 8));
+    var history = [];             // [{role:"user"|"assistant", content:str}] (last 8 sent)
+    var lastUnmetNeed = "";
+    var lastLeadReason = "";
+    function firstPartyAnonId() {
+      try { return localStorage.getItem("orderlya_aid") || null; } catch (e) { return null; }
+    }
+    // Arm reply-capture once (the bot already asked verbally). captureOffered => never re-arm.
+    function armContactCapture() {
+      if (captureOffered) return;
+      captureOffered = true;
+      awaitingContact = true;
+    }
+    // Pull an email or a phone number out of a reply. PRECISE (not greedy) so an ordinary
+    // question that merely contains digits is NOT mistaken for a contact: a phone is accepted
+    // only when the whole reply is dial characters (the visitor answered "what's your number?").
+    function detectContact(text) {
+      var t = (text || "").trim();
+      var em = t.match(/[^\s@]+@[^\s@]+\.[^\s@]+/);
+      if (em) return { email: em[0] };
+      var digitCount = (t.match(/[0-9]/g) || []).length;
+      var nonDial = t.replace(/[0-9+\-\s().]/g, "").length;
+      if (nonDial === 0 && digitCount >= 8 && digitCount <= 15) return { phone: t };
+      return null;
+    }
+    // Persist the captured contact (email OR WhatsApp/phone) + the demand signal, then confirm
+    // inline echoing the contact ("Perfect — we'll reach out at <contact>."). Best-effort.
+    function captureContact(contact) {
+      var val = contact.email || contact.phone;
+      var body = {
+        session_id: sid,
+        anonymous_id: firstPartyAnonId(),
+        turnstile_token: tsToken,
+        locale: LOCALE,
+        question: lastQuestion,
+        transcript: transcript.slice(-12),
+        unmet_need: lastUnmetNeed || null,
+        lead_reason: lastLeadReason || null,
+      };
+      if (contact.email) body.email = contact.email; else body.phone = contact.phone;
+      var confirmMsg = (capText.thanksAt ? capText.thanksAt.replace("{c}", val) : capText.thanks);
+      var pending = addMsg("…", "bot");
+      fetch(API_BASE + "/public/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      })
+        .then(function () { pending.textContent = confirmMsg; })
+        .catch(function () { pending.textContent = capText.thanks; })  // best-effort: never scold a lead
+        .finally(function () {
+          transcript.push("A: " + confirmMsg);
+          log.scrollTop = log.scrollHeight;
+          try { if (window.turnstile && TS_KEY) window.turnstile.reset(tsHolder); } catch (e) {}
+          tsToken = "";
+        });
+    }
+
+    // ── AI-suggestions in-chat capture (hint-only, non-pushy) ────────────────
+    // The SERVER (the model's offer_suggestion flag) decides WHEN to offer; the widget
+    // renders a small optional suggestion box, at most ONCE per session, never blocking
+    // the chat. Declining stores nothing. Mirrors the offerCapture() pattern.
+    var suggestOffered = false;
+    function offerSuggestion() {
+      if (suggestOffered) return;
+      suggestOffered = true;
+      var wrap = newEl("div");
+      wrap.className = "oa-capture";
+      var p = newEl("div");
+      p.className = "oa-capture-prompt";
+      p.textContent = sugText.prompt;
+      var ta = newEl("textarea");
+      ta.className = "oa-capture-input";
+      ta.setAttribute("rows", "2");
+      ta.setAttribute("maxlength", "2000");
+      ta.placeholder = sugText.placeholder;
+      var row = newEl("div");
+      row.className = "oa-capture-row";
+      var send = newEl("button");
+      send.type = "button";
+      send.className = "oa-capture-send";
+      send.textContent = sugText.send;
+      var dismiss = newEl("button");
+      dismiss.type = "button";
+      dismiss.className = "oa-capture-dismiss";
+      dismiss.textContent = sugText.dismiss;
+      row.appendChild(send);
+      wrap.appendChild(p); wrap.appendChild(ta); wrap.appendChild(row); wrap.appendChild(dismiss);
+      log.appendChild(wrap);
+      log.scrollTop = log.scrollHeight;
+      setTimeout(function () { ta.focus(); }, 30);
+
+      function done(msg) { wrap.innerHTML = ""; var d = newEl("div"); d.className = "oa-capture-done"; d.textContent = msg; wrap.appendChild(d); log.scrollTop = log.scrollHeight; }
+      dismiss.addEventListener("click", function () { wrap.remove(); });  // decline → store nothing
+      var sending = false;
+      function submitSuggestion() {
+        var text = (ta.value || "").trim();
+        if (!text) { ta.setAttribute("aria-invalid", "true"); p.textContent = sugText.empty; return; }
+        if (sending) return;
+        sending = true; send.disabled = true;
+        fetch(API_BASE + "/public/suggestion", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            text: text,
+            source: "ask_assistant",
+            session_id: sid,
+            anonymous_id: firstPartyAnonId(),
+            turnstile_token: tsToken,
+            locale: LOCALE,
+          }),
+        })
+          .then(function () { done(sugText.thanks); })
+          .catch(function () { done(sugText.thanks); })  // best-effort: never scold
+          .finally(function () {
+            try { if (window.turnstile && TS_KEY) window.turnstile.reset(tsHolder); } catch (e) {}
+            tsToken = "";
+          });
+      }
+      send.addEventListener("click", submitSuggestion);
+    }
+
+    function openPanel() {
+      panel.hidden = false;
+      fab.setAttribute("aria-expanded", "true");
+      loadTurnstile();
+      setTimeout(function () { input && input.focus(); }, 30);
+    }
+    function closePanel() {
+      panel.hidden = true;
+      fab.setAttribute("aria-expanded", "false");
+      fab.focus();
+    }
+
+    // demo_bot_click — secondary conversion: the visitor opens the "Ask Orderlya" demo
+    // bot (the on-site try-the-bot CTA). Fire ONCE per session on the first open, via the
+    // shared lib/track.ts seam (posthog + Google Ads gtag + conversion send). No PII.
+    var demoTracked = false;
+    function trackDemoOpen() {
+      if (demoTracked) return;
+      demoTracked = true;
+      try {
+        if (window.orderlyaTrack) window.orderlyaTrack("demo_bot_click", { locale: LOCALE, source: "assistant_widget" });
+      } catch (e) {}
+    }
+
+    fab.addEventListener("click", function () {
+      if (panel.hidden) { trackDemoOpen(); openPanel(); } else closePanel();
+    });
+    closeBtn.addEventListener("click", closePanel);
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !panel.hidden) closePanel();
+    });
+
+    var busy = false;
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (busy) return;
+      var q = (input.value || "").trim();
+      if (!q) return;
+      if (q.length > 500) q = q.slice(0, 500);
+
+      // If the bot just asked for a contact, try to capture it from THIS reply — ONE ask per
+      // turn (no widget side-field) and, via captureOffered, at most once per session (no nag).
+      if (awaitingContact) {
+        awaitingContact = false;  // consume the turn either way — never re-ask (graceful decline)
+        var contact = detectContact(q);
+        if (contact) {
+          addMsg(q, "user");
+          transcript.push("Q: " + q);
+          input.value = "";
+          captureContact(contact);
+          return;  // do NOT forward a contact to /public/ask
+        }
+        // Not a contact → treat as a normal question below (they moved on; we don't re-ask).
+      }
+
+      addMsg(q, "user");
+      lastQuestion = q;
+      transcript.push("Q: " + q);
+      input.value = "";
+      busy = true;
+      sendBtn.disabled = true;
+      var pending = addMsg("…", "bot");
+
+      fetch(API_BASE + "/public/ask", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          question: q, session_id: sid, conversation_id: convId,
+          history: history.slice(-8), turnstile_token: tsToken, locale: LOCALE,
+        }),
+      })
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+        .then(function (data) {
+          pending.textContent = (data && data.answer) ? data.answer : errorText;
+          history.push({ role: "user", content: q });
+          if (data && data.answer) {
+            transcript.push("A: " + String(data.answer).slice(0, 300));
+            history.push({ role: "assistant", content: String(data.answer).slice(0, 1000) });
+          }
+          // Ask-bot overhaul — remember the last capture signal so a lead records the demand.
+          if (data && data.unmet_need) lastUnmetNeed = String(data.unmet_need).slice(0, 200);
+          if (data && data.lead_reason) lastLeadReason = String(data.lead_reason).slice(0, 40);
+          // Server (model) decides the moment. On offer_capture the bot ALREADY asked verbally
+          // in its answer, so we only ARM reply-capture (no second side-field = no double-ask);
+          // captureOffered makes it at most once per session (ask-once / no nag).
+          if (data && data.offer_capture) armContactCapture();
+          // Hint-only suggestion offer — only when the visitor hinted at a wish/idea.
+          else if (data && data.offer_suggestion) offerSuggestion();
+        })
+        .catch(function () {
+          pending.textContent = errorText;
+        })
+        .finally(function () {
+          busy = false;
+          sendBtn.disabled = false;
+          log.scrollTop = log.scrollHeight;
+          // Reset the invisible Turnstile token so the next question re-challenges.
+          try { if (window.turnstile && TS_KEY) window.turnstile.reset(tsHolder); } catch (e) {}
+          tsToken = "";
+        });
+    });
+  })();
+})();</script>  </body></html>

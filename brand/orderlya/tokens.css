@@ -1,0 +1,11 @@
+/* Orderlya design tokens */
+:root{
+  --orderlya-ink:#171512;        /* text, ring, chairs */
+  --orderlya-amber:#E9A23A;      /* accent: chairs pattern, "lya", CTAs */
+  --orderlya-amber-ink:#8A5E12;  /* amber TEXT on light (AA contrast) */
+  --orderlya-wood:#A6713F;       /* the tabletop tone */
+  --orderlya-paper:#FFFFFF;      /* light ground */
+  --orderlya-night:#100F0E;      /* dark ground */
+  --orderlya-font-latin:"Familjen Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --orderlya-font-arabic:"IBM Plex Sans Arabic","Cairo",system-ui,sans-serif;
+}

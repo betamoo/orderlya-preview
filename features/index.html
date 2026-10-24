@@ -1,0 +1,526 @@
+<!DOCTYPE html><html lang="en" dir="ltr"> <head><meta name="robots" content="noindex, nofollow"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- Google tag (gtag.js) — Google Ads global site tag. Placed as early as
+         practical in <head> (immediately after charset/viewport) so it lands on
+         EVERY EN + AR marketing page via this shared layout. Exactly ONE per page
+         (Google warns against duplicates). Tag ID is a PUBLIC Google Ads ID
+         (src/data/site.ts). NOT consent-gated for now (founder priority = ship;
+         consent-mode is a later refinement). Guarded by src/__tests__/gtag.test.ts. --><script>(function(){const gtagId = "AW-937830596";
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", gtagId);
+    })();</script><title>Features — cloud POS &amp; WhatsApp ordering for restaurants | Orderlya</title><meta name="description" content="Everything to run a restaurant in one cloud POS: AI WhatsApp order-taking, a live kitchen board, delivery dispatch, dine-in, loyalty and multi-branch HQ."><!-- Search-engine site verification (rendered only when the build-time env var is set). --><!-- Meta (Facebook Business) domain verification — gates WhatsApp Business
+         Platform access, launch-critical. HARDCODED (not build-time env like the
+         Google/Bing tags above): this is a permanent, public, non-rotating
+         domain-verification token, and the marketing bundle is PRE-BUILT +
+         COMMITTED — an env-driven tag only reaches prod if whoever rebuilds
+         happens to have the var set locally, which is too fragile for a
+         one-shot verification gate. Renders on EVERY page via this shared
+         layout, so it is present on the home page (the one Meta checks).
+         Do not remove without first re-verifying the domain in Meta Business
+         Settings, or WhatsApp Cloud API access for this domain breaks. --><meta name="facebook-domain-verification" content="s9rptzssy91imbqws6e85y0vu5on57"><!-- theme-color adapts to the resolved theme (light Cream / dark Espresso). --><meta name="theme-color" content="#ECE3D4" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#221E18" media="(prefers-color-scheme: dark)"><!-- Theme init (LIGHT + DARK). Set data-theme BEFORE first paint (no FOUC): use the
+         stored choice if present, else fall back to the OS preference. Persisted key is
+         `orderlya_theme`; the Header toggle flips + stores it. --><script>
+      (function () {
+        try {
+          var t = localStorage.getItem("orderlya_theme");
+          if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script><!-- Brand type (Bricolage Grotesque, Hanken Grotesk, JetBrains Mono, IBM Plex Sans
+         Arabic) is SELF-HOSTED via @fontsource and bundled into the Astro CSS graph — no
+         Google Fonts / no third-party font request. --><!-- Orderlya brand favicon / app icons --><link rel="icon" type="image/svg+xml" href="/orderlya-preview/brand/orderlya/orderlya-favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="/orderlya-preview/brand/orderlya/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/orderlya-preview/brand/orderlya/apple-touch-icon-180.png"><link rel="manifest" href="/orderlya-preview/manifest.json"><!-- Canonical + hreflang pair (self + alternate + x-default) --><link rel="canonical" href="https://orderlya.com/features"><link rel="alternate" hreflang="en" href="https://orderlya.com/features"><link rel="alternate" hreflang="ar" href="https://orderlya.com/ar/features"><link rel="alternate" hreflang="x-default" href="https://orderlya.com/features"><!-- Open Graph / Twitter --><meta property="og:type" content="website"><meta property="og:site_name" content="Orderlya"><meta property="og:title" content="Features — cloud POS &#38; WhatsApp ordering for restaurants | Orderlya"><meta property="og:description" content="Everything to run a restaurant in one cloud POS: AI WhatsApp order-taking, a live kitchen board, delivery dispatch, dine-in, loyalty and multi-branch HQ."><meta property="og:url" content="https://orderlya.com/features"><meta property="og:image" content="https://orderlya.com/shots/operator-menu-light.webp"><meta property="og:image:width" content="1600"><meta property="og:image:height" content="1000"><meta property="og:image:alt" content="Orderlya operator — menu management"><meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="ar_EG"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Features — cloud POS &#38; WhatsApp ordering for restaurants | Orderlya"><meta name="twitter:description" content="Everything to run a restaurant in one cloud POS: AI WhatsApp order-taking, a live kitchen board, delivery dispatch, dine-in, loyalty and multi-branch HQ."><meta name="twitter:image" content="https://orderlya.com/shots/operator-menu-light.webp"><meta name="twitter:image:alt" content="Orderlya operator — menu management"><!-- TODO(director): add twitter:site / twitter:creator once an official @handle exists. --><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://orderlya.com/#organization","name":"Orderlya","url":"https://orderlya.com","logo":"https://orderlya.com/brand/orderlya/orderlya-mark.svg","description":"Orderlya is an AI-powered, WhatsApp-first ordering platform for MENA restaurants — an AI agent takes and confirms your customers' orders inside WhatsApp in Arabic or English, your kitchen sees them instantly, and delivery runs itself. 14-day free trial, no credit card.","areaServed":["EG","SA","AE","KW","QA","OM","BH","JO","MENA"],"sameAs":["https://www.linkedin.com/company/orderlya","https://www.instagram.com/order.lya","https://www.facebook.com/orderlya"],"email":"hello@orderlya.com","contactPoint":{"@type":"ContactPoint","email":"hello@orderlya.com","contactType":"customer support","availableLanguage":["en","ar"]}},{"@type":"WebSite","@id":"https://orderlya.com/#website","name":"Orderlya","url":"https://orderlya.com","description":"Orderlya is an AI-powered, WhatsApp-first ordering platform for MENA restaurants — an AI agent takes and confirms your customers' orders inside WhatsApp in Arabic or English, your kitchen sees them instantly, and delivery runs itself. 14-day free trial, no credit card.","inLanguage":["en","ar"],"publisher":{"@id":"https://orderlya.com/#organization"}},{"@type":"SoftwareApplication","@id":"https://orderlya.com/#software","name":"Orderlya","applicationCategory":"BusinessApplication","operatingSystem":"Web, WhatsApp","description":"Orderlya is an AI-powered, WhatsApp-first ordering platform for MENA restaurants — an AI agent takes and confirms your customers' orders inside WhatsApp in Arabic or English, your kitchen sees them instantly, and delivery runs itself. 14-day free trial, no credit card.","image":"https://orderlya.com/brand/orderlya/orderlya-wordmark-1200.png","offers":{"@type":"AggregateOffer","priceCurrency":"EGP","lowPrice":"850","highPrice":"2850","offerCount":"6","offers":[{"@type":"Offer","name":"Start","price":"850","priceCurrency":"EGP","availability":"https://schema.org/InStock","url":"https://orderlya.com/pricing","priceSpecification":{"@type":"UnitPriceSpecification","price":"850","priceCurrency":"EGP","unitText":"branch/month","valueAddedTaxIncluded":true}},{"@type":"Offer","name":"Run","price":"1850","priceCurrency":"EGP","availability":"https://schema.org/InStock","url":"https://orderlya.com/pricing","priceSpecification":{"@type":"UnitPriceSpecification","price":"1850","priceCurrency":"EGP","unitText":"branch/month","valueAddedTaxIncluded":true}},{"@type":"Offer","name":"Scale","price":"2850","priceCurrency":"EGP","availability":"https://schema.org/InStock","url":"https://orderlya.com/pricing","priceSpecification":{"@type":"UnitPriceSpecification","price":"2850","priceCurrency":"EGP","unitText":"branch/month","valueAddedTaxIncluded":true}},{"@type":"Offer","name":"AI Growth Package","price":"1250","priceCurrency":"EGP","availability":"https://schema.org/InStock","url":"https://orderlya.com/pricing","priceSpecification":{"@type":"UnitPriceSpecification","price":"1250","priceCurrency":"EGP","valueAddedTaxIncluded":true}},{"@type":"Offer","name":"Get Found (SEO)","price":"250","priceCurrency":"EGP","availability":"https://schema.org/InStock","url":"https://orderlya.com/pricing","priceSpecification":{"@type":"UnitPriceSpecification","price":"250","priceCurrency":"EGP","valueAddedTaxIncluded":true}},{"@type":"Offer","name":"Free trial","price":"0","priceCurrency":"EGP","availability":"https://schema.org/InStock","url":"https://orderlya.com/pricing","description":"14-day free trial, up to 50 AI orders, no credit card."}]},"featureList":["How do customers order over WhatsApp?","Where do orders show up for my staff?","Can it handle delivery and dispatch?","What about dine-in and table service?","Does it keep my customers and loyalty?","Can the AI do more than take orders?","Can I track money and stock?","What reporting do I get?","Can customers find me on Google?","Can I run multiple branches?"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Orderlya","item":"https://orderlya.com/"},{"@type":"ListItem","position":2,"name":"Features","item":"https://orderlya.com/features"}]}]}</script><!-- Essential first-party analytics beacon (L0 page_view) — privacy-friendly,
+         no cross-site tracking. Fires to the app origin's /beacon; failure is
+         silent + non-blocking. anonymous_id persists the visitor across pages.
+         Optional third-party analytics stay gated behind the consent banner. --><script>(function(){const apiBase = "";
+const locale = "en";
+
+      (function () {
+        try {
+          var KEY = "orderlya_aid";
+          var aid = localStorage.getItem(KEY);
+          if (!aid) {
+            aid =
+              (crypto && crypto.randomUUID && crypto.randomUUID()) ||
+              "aid_" + Date.now() + "_" + Math.random().toString(36).slice(2);
+            localStorage.setItem(KEY, aid);
+          }
+          var body = JSON.stringify({
+            event_name: "page_view",
+            anonymous_id: aid,
+            locale: locale,
+            properties: { path: location.pathname },
+          });
+          var url = apiBase + "/beacon";
+          if (navigator.sendBeacon) {
+            navigator.sendBeacon(url, new Blob([body], { type: "application/json" }));
+          } else {
+            fetch(url, { method: "POST", body: body, headers: { "Content-Type": "application/json" }, keepalive: true });
+          }
+        } catch (e) {
+          /* first-party beacon is best-effort; never block the page */
+        }
+      })();
+    })();</script><!-- PostHog client-side session replay (#147). Un-gated per founder directive,
+         and since 2026-09-06 it masks NOTHING — there is no PII backstop here. Every
+         input value recorded on this site, the trial-signup form included, is
+         cleartext. See PostHogReplay.astro. Bundled (not is:inline) so posthog-js is
+         bundled. --><script type="module" src="/orderlya-preview/_astro/PostHogReplay.astro_astro_type_script_index_0_lang.DDcJjz7y.js"></script><!-- Conversion/funnel event seam (lib/track.ts) — installs window.orderlyaTrack so
+         island scripts can fire the 4 named events (trial_signup / signup_started /
+         demo_bot_click / pricing_view) to BOTH posthog + Google Ads gtag. --><script type="module" src="/orderlya-preview/_astro/Track.astro_astro_type_script_index_0_lang.Bg20IFfC.js"></script><link rel="stylesheet" href="/orderlya-preview/_astro/about.CUDOiIZj.css">
+<style>.solutions-links[data-astro-cid-qedsesaq]{list-style:none;padding:0;margin:clamp(1rem,3vw,1.5rem) 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.65rem 1.25rem}.solutions-links[data-astro-cid-qedsesaq] a[data-astro-cid-qedsesaq]{color:var(--ink);font-weight:600;text-decoration:underline;text-decoration-color:var(--am);text-underline-offset:3px}.solutions-links[data-astro-cid-qedsesaq] a[data-astro-cid-qedsesaq]:hover{text-decoration-thickness:2px}
+.ord-mark{display:inline-block;line-height:0}.ord-mark svg{width:var(--mark-size, 64px);height:var(--mark-size, 64px);display:block}
+</style></head> <body><div style="background:#221E18;color:#FBF6EC;font:600 13px/1.4 system-ui,sans-serif;padding:8px 16px;text-align:center">Preview of pending design fixes — the live site is orderlya.com. Sign-up and contact forms do not work here.</div> <!-- `otable-ambient` keeps the O-table (otable) rotation hook name stable for tests. --><div class="ambient-mark otable-ambient" aria-hidden="true"> <span class="amb-mark"> <svg viewBox="0 0 100 100" width="1000" height="1000" role="img" aria-label="Orderlya mark"> <circle cx="50" cy="50" r="30" fill="var(--ord-saffron, #E0A43B)" fill-opacity="0.14"></circle> <g class="ord-chair ord-c0" transform="rotate(0 50 50)"><circle cx="50" cy="17" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle></g> <g class="ord-chair ord-c1" transform="rotate(40 50 50)"><circle cx="50" cy="17" r="6.5" fill="currentColor"></circle></g> <g class="ord-chair ord-c2" transform="rotate(80 50 50)"><circle cx="50" cy="17" r="6.5" fill="currentColor"></circle></g> <g class="ord-chair ord-c3" transform="rotate(120 50 50)"><circle cx="50" cy="17" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle></g> <g class="ord-chair ord-c4" transform="rotate(160 50 50)"><circle cx="50" cy="17" r="6.5" fill="currentColor"></circle></g> <g class="ord-chair ord-c5" transform="rotate(200 50 50)"><circle cx="50" cy="17" r="6.5" fill="currentColor"></circle></g> <g class="ord-chair ord-c6" transform="rotate(240 50 50)"><circle cx="50" cy="17" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle></g> <g class="ord-chair ord-c7" transform="rotate(280 50 50)"><circle cx="50" cy="17" r="6.5" fill="currentColor"></circle></g> <g class="ord-chair ord-c8" transform="rotate(320 50 50)"><circle cx="50" cy="17" r="6.5" fill="currentColor"></circle></g> </svg> </span> </div>  <a href="#main" class="skip-link">Skip to content</a> <header class="bar"> <div class="wrap"> <nav class="nav" aria-label="Primary"> <a class="brandtag" href="/orderlya-preview/" aria-label="Orderlya home"> <span class="word wm-inline wm-header wm-arrange" style="--wm-h:36px" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 388 116" width="388" height="116" role="img" aria-label="Orderlya logo">
+  <g transform="translate(2 12) scale(0.92)">
+    <circle cx="50" cy="50" r="30" fill="var(--ord-saffron, #E0A43B)" fill-opacity="0.12"></circle>
+    <circle cx="71.21" cy="24.72" r="6.5" fill="currentColor"></circle>
+    <circle cx="82.50" cy="44.27" r="6.5" fill="currentColor"></circle>
+    <circle cx="61.29" cy="81.01" r="6.5" fill="currentColor"></circle>
+    <circle cx="38.71" cy="81.01" r="6.5" fill="currentColor"></circle>
+    <circle cx="17.50" cy="44.27" r="6.5" fill="currentColor"></circle>
+    <circle cx="28.79" cy="24.72" r="6.5" fill="currentColor"></circle>
+    <circle cx="50.00" cy="17.00" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+    <circle cx="78.58" cy="66.50" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+    <circle cx="21.42" cy="66.50" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+  </g>
+  <text x="97" y="84" font-family="'Bricolage Grotesque Variable','Bricolage Grotesque','Arial Black',sans-serif" font-size="74" font-weight="700" letter-spacing="-3.5" fill="currentColor">rder<tspan fill="var(--brand-lya, #B0472B)">lya</tspan></text>
+</svg>
+</span>   <span class="ord-mark brand-mark" style="--mark-size:34px" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512" role="img" aria-label="Orderlya mark">
+  <circle cx="50" cy="50" r="30" fill="var(--ord-saffron, #E0A43B)" fill-opacity="0.12"></circle>
+  <circle cx="71.21" cy="24.72" r="6.5" fill="currentColor"></circle>
+  <circle cx="82.50" cy="44.27" r="6.5" fill="currentColor"></circle>
+  <circle cx="61.29" cy="81.01" r="6.5" fill="currentColor"></circle>
+  <circle cx="38.71" cy="81.01" r="6.5" fill="currentColor"></circle>
+  <circle cx="17.50" cy="44.27" r="6.5" fill="currentColor"></circle>
+  <circle cx="28.79" cy="24.72" r="6.5" fill="currentColor"></circle>
+  <circle cx="50.00" cy="17.00" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+  <circle cx="78.58" cy="66.50" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+  <circle cx="21.42" cy="66.50" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+</svg>
+</span>  </a> <button type="button" class="nav-toggle-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Menu" id="nav-toggle">
+☰
+</button> <div class="navlinks" id="nav-links"> <a href="/orderlya-preview/features">Features</a><a href="/orderlya-preview/pricing">Pricing</a><a href="/orderlya-preview/compare">Compare</a><a href="/orderlya-preview/faq">FAQ</a><a href="/orderlya-preview/blog">Blog</a><a href="/orderlya-preview/about">About</a><a href="/orderlya-preview/contact">Contact</a>  <div class="navlinks-tools"> <a href="/orderlya-preview/ar/features" class="lang" hreflang="ar" lang="ar">العربية</a> <button class="toggle theme-toggle" type="button" aria-label="Toggle light or dark theme"> <span class="theme-icon" aria-hidden="true">☀</span> </button> </div> </div> <span class="navspace"></span> <div class="navtools"> <a href="/orderlya-preview/ar/features" class="lang" hreflang="ar" lang="ar">العربية</a> <button class="toggle theme-toggle" type="button" aria-label="Toggle light or dark theme"> <span class="theme-icon" aria-hidden="true">☀</span> </button> <a href="/orderlya-preview/home" class="nav-login" data-testid="nav-login">Log in</a> <a href="/orderlya-preview/#signup" class="btn primary sm nav-cta">Start free trial</a> <a href="/orderlya-preview/home" class="btn primary sm nav-dashboard" data-testid="nav-dashboard" hidden>My Dashboard</a> <button type="button" class="nav-logout" data-testid="nav-logout" hidden>Sign out</button> </div> </nav> </div> </header> <script>
+  (function () {
+    // Mobile disclosure.
+    var btn = document.getElementById("nav-toggle");
+    var links = document.getElementById("nav-links");
+    if (btn && links) {
+      btn.addEventListener("click", function () {
+        var open = links.classList.toggle("open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+    // NOTE: the returning-operator auth toggle ("Dashboard" + "Sign out" when an
+    // operator session exists) lives in the BUNDLED module script below (imports
+    // ../lib/navAuth), NOT here — it is a shared, unit-tested seam so the recurring
+    // "logged-in nav invisible" bug is catchable by the guard (nav-login.test.ts).
+    // Theme toggle (LIGHT + DARK). Flip data-theme, persist, repaint the icon(s).
+    // Class-based so BOTH toggle copies work — the top-right one (.navtools) and the
+    // compact-phone one relocated into the disclosure menu (.navlinks-tools).
+    var root = document.documentElement;
+    var tbtns = document.querySelectorAll(".theme-toggle");
+    var icons = document.querySelectorAll(".theme-icon");
+    function current() {
+      var a = root.getAttribute("data-theme");
+      if (a === "light" || a === "dark") return a;
+      return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    function paint(mode) {
+      for (var i = 0; i < icons.length; i++) icons[i].textContent = mode === "dark" ? "☾" : "☀";
+    }
+    paint(current());
+    for (var j = 0; j < tbtns.length; j++) {
+      tbtns[j].addEventListener("click", function () {
+        var next = current() === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try {
+          localStorage.setItem("orderlya_theme", next);
+        } catch (e) {}
+        paint(next);
+      });
+    }
+  })();
+</script> <!-- Returning-operator auth toggle (BUNDLED module → runs after DOM parse). Reveals
+     "Dashboard" + "Sign out" when an operator session (localStorage['crm_token'])
+     is present on this same-origin site, and hides the ghost "Log in" + trial CTA;
+     logged out is the server-rendered default. Logic is the shared, unit-tested
+     ../lib/navAuth seam (guard: nav-login.test.ts) so this can't silently regress. The
+     localized logged-out home is read off the brand link's href (bundled scripts can't
+     see Astro frontmatter). --> <script type="module" src="/orderlya-preview/_astro/Header.astro_astro_type_script_index_0_lang.715lvIK2.js"></script> <main id="main">  <section class="section" data-astro-cid-qedsesaq> <div class="container" data-astro-cid-qedsesaq> <span class="eyebrow" data-astro-cid-qedsesaq>Features</span> <h1 data-astro-cid-qedsesaq>Everything to run WhatsApp ordering — in one place</h1> <p class="lede" data-astro-cid-qedsesaq>From the first WhatsApp message to a dispatched delivery — and the POS, kitchen, dine-in floor and the numbers in between — Orderlya runs the whole flow from one screen. Here&#39;s what&#39;s in the base, what each plan adds, and the à-la-carte add-ons you can switch on any time.</p> <div class="feature-grid" data-astro-cid-qedsesaq> <div class="feature-group" data-astro-cid-qedsesaq> <span class="icon" aria-hidden="true" data-astro-cid-qedsesaq> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-hidden="true" data-icon="ai" style="--accent: var(--icon-accent, var(--am));"><path d="M11 3.6l1.5 4.4 4.4 1.5-4.4 1.5L11 15.4 9.5 11 5.1 9.5 9.5 8z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17.6 14.2l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z" style="fill:var(--accent); stroke:var(--accent)" stroke-width="1.4" stroke-linejoin="round"></path></svg> </span> <h2 data-astro-cid-qedsesaq>How do customers order over WhatsApp?</h2> <p class="outcome" data-astro-cid-qedsesaq>An AI agent chats with your customer in Egyptian Arabic or English, builds the order in their own words, confirms it, and handles cancellations and reorders — 24/7, with no app and no form. It hands off to your team only when a human is genuinely needed.</p> <ul class="feat-incl" data-astro-cid-qedsesaq> <li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Arabic + English AI ordering </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Order confirmation inside WhatsApp </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Handoff to a human when needed </li> </ul> <span class="tag base" data-astro-cid-qedsesaq>Base</span> </div><div class="feature-group" data-astro-cid-qedsesaq> <span class="icon" aria-hidden="true" data-astro-cid-qedsesaq> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-hidden="true" data-icon="orders" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.6h12v16.8l-2-1.3-2 1.3-2-1.3-2 1.3-2-1.3-2 1.3z"></path></g><path d="M9 8h6M9 11.4h6" fill="none" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round"></path></svg> </span> <h2 data-astro-cid-qedsesaq>Where do orders show up for my staff?</h2> <p class="outcome" data-astro-cid-qedsesaq>Every order — WhatsApp, Instagram, Messenger, your own branded ordering page or the POS — lands in one shared inbox and on a live order board, so nothing slips through the cracks. Your storefront, cart, checkout and a customer-facing tracking link come built in, and a printing terminal can auto-print kitchen tickets and customer receipts to a thermal printer.</p> <ul class="feat-incl" data-astro-cid-qedsesaq> <li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Live kitchen / order board </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Web storefront + menu </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Cash-on-delivery support </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Auto-print kitchen tickets &amp; receipts </li> </ul> <span class="tag base" data-astro-cid-qedsesaq>Base</span> </div><div class="feature-group" data-astro-cid-qedsesaq> <span class="icon" aria-hidden="true" data-astro-cid-qedsesaq> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-hidden="true" data-icon="drivers" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.4" cy="17.4" r="2.6"></circle><circle cx="17.6" cy="17.4" r="2.6"></circle><path d="M9 17.4h6"></path><path d="M6.4 17.4l3.2-8.4h3.6l2.6 4.6"></path></g><path d="M12.6 6.4h4v4l1.4 2.6" fill="none" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg> </span> <h2 data-astro-cid-qedsesaq>Can it handle delivery and dispatch?</h2> <p class="outcome" data-astro-cid-qedsesaq>From the Run plan up, run your own delivery: a driver mobile app, automatic dispatch that never hands the same order to two drivers, live tracking, zone-and-fee rules, and a per-driver cash-on-delivery ledger so the cash always reconciles.</p> <ul class="feat-incl" data-astro-cid-qedsesaq> <li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Driver dispatch &amp; assignment </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Delivery tracking </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Zone &amp; fee rules </li> </ul> <span class="tag edition" data-astro-cid-qedsesaq>Plan</span> </div><div class="feature-group" data-astro-cid-qedsesaq> <span class="icon" aria-hidden="true" data-astro-cid-qedsesaq> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-hidden="true" data-icon="dinein" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12.4" cy="12" r="4.4"></circle><path d="M4.3 4.6v3.2M5.8 4.6v3.2M7.3 4.6v3.2M5.8 7.8v11.6"></path><path d="M19 4.6c-1.3.7-1.3 4.9 0 5.9zM19 10.5v8.9"></path></g><circle cx="12.4" cy="12" r="1.5" style="fill:var(--accent)"></circle></svg> </span> <h2 data-astro-cid-qedsesaq>What about dine-in and table service?</h2> <p class="outcome" data-astro-cid-qedsesaq>Turn on the full-service floor: a table and seat map, dine-in tabs, QR ordering and QR-pay so guests settle up at the table — plus reservations and a waitlist so tables never sit empty.</p> <ul class="feat-incl" data-astro-cid-qedsesaq> <li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Table management </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> QR / table ordering </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Dine-in service flow </li> </ul> <span class="tag edition" data-astro-cid-qedsesaq>Plan</span> </div><div class="feature-group" data-astro-cid-qedsesaq> <span class="icon" aria-hidden="true" data-astro-cid-qedsesaq> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-hidden="true" data-icon="customers" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="8.4" r="3.2"></circle><path d="M4.6 20c0-3.7 2.9-6.2 6.4-6.2s6.4 2.5 6.4 6.2"></path></g><path d="M18 3.6l.85 1.7 1.9.25-1.37 1.32.33 1.87L18 7.94l-1.7.8.33-1.87L15.26 5.55l1.9-.25z" style="fill:var(--accent)"></path></svg> </span> <h2 data-astro-cid-qedsesaq>Does it keep my customers and loyalty?</h2> <p class="outcome" data-astro-cid-qedsesaq>Full customer records, order history and one-tap reorder are in the base — the relationship stays yours, not an aggregator&#39;s. Add points, milestones and automatic congrats messages that quietly bring customers back.</p> <ul class="feat-incl" data-astro-cid-qedsesaq> <li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Customer records </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Loyalty points &amp; rewards </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Reorder from history </li> </ul> <span class="tag base" data-astro-cid-qedsesaq>Base</span> </div> </div> </div> </section> <section class="section" data-astro-cid-qedsesaq> <div class="container" data-astro-cid-qedsesaq> <figure class="shotframe hero-shot" data-astro-cid-qedsesaq> <img class="shot-light" src="/orderlya-preview/shots/operator-orders-light.webp" width="1600" height="1000" loading="eager" decoding="async" alt="Orderlya operator dashboard — every live order across branches" data-astro-cid-qedsesaq> <img class="shot-dark" src="/orderlya-preview/shots/operator-orders-dark.webp" width="1600" height="1000" loading="eager" decoding="async" alt="Orderlya operator dashboard — every live order across branches" data-astro-cid-qedsesaq> <figcaption data-astro-cid-qedsesaq> One screen for every order: WhatsApp, POS, dine-in and delivery. </figcaption> </figure> </div> </section> <section class="section" data-astro-cid-qedsesaq> <div class="container" data-astro-cid-qedsesaq> <h2 data-astro-cid-qedsesaq>Solutions &amp; use-cases</h2> <p class="lede" data-astro-cid-qedsesaq>Explore how restaurants in Egypt put Orderlya to work.</p> <ul class="solutions-links" data-astro-cid-qedsesaq> <li data-astro-cid-qedsesaq> <a href="/orderlya-preview/whatsapp-ordering-egypt" data-astro-cid-qedsesaq>WhatsApp ordering</a> </li><li data-astro-cid-qedsesaq> <a href="/orderlya-preview/ai-ordering" data-astro-cid-qedsesaq>AI order-taking</a> </li><li data-astro-cid-qedsesaq> <a href="/orderlya-preview/commission-free-egypt" data-astro-cid-qedsesaq>Commission-free</a> </li><li data-astro-cid-qedsesaq> <a href="/orderlya-preview/compare/foodics-alternative-egypt" data-astro-cid-qedsesaq>Foodics alternative</a> </li><li data-astro-cid-qedsesaq> <a href="/orderlya-preview/compare/talabat-alternative-egypt" data-astro-cid-qedsesaq>Talabat alternative</a> </li><li data-astro-cid-qedsesaq> <a href="/orderlya-preview/compare/elmenus-alternative-egypt" data-astro-cid-qedsesaq>Elmenus alternative</a> </li><li data-astro-cid-qedsesaq> <a href="/orderlya-preview/compare/sapaad-alternative-egypt" data-astro-cid-qedsesaq>Sapaad alternative</a> </li><li data-astro-cid-qedsesaq> <a href="/orderlya-preview/features/kitchen-display-system" data-astro-cid-qedsesaq>Kitchen Display System</a> </li><li data-astro-cid-qedsesaq> <a href="/orderlya-preview/features/accounting-eta" data-astro-cid-qedsesaq>Accounting &amp; ETA</a> </li><li data-astro-cid-qedsesaq> <a href="/orderlya-preview/features/inventory" data-astro-cid-qedsesaq>Inventory</a> </li><li data-astro-cid-qedsesaq> <a href="/orderlya-preview/features/signals" data-astro-cid-qedsesaq>Signals</a> </li> </ul> </div> </section> <section class="section cta-band"> <div class="wrap"> <div class="band-cta"> <span class="ord-mark bmark" style="--mark-size:280px" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512" role="img" aria-label="Orderlya mark">
+  <circle cx="50" cy="50" r="30" fill="var(--ord-saffron, #E0A43B)" fill-opacity="0.12"></circle>
+  <circle cx="71.21" cy="24.72" r="6.5" fill="currentColor"></circle>
+  <circle cx="82.50" cy="44.27" r="6.5" fill="currentColor"></circle>
+  <circle cx="61.29" cy="81.01" r="6.5" fill="currentColor"></circle>
+  <circle cx="38.71" cy="81.01" r="6.5" fill="currentColor"></circle>
+  <circle cx="17.50" cy="44.27" r="6.5" fill="currentColor"></circle>
+  <circle cx="28.79" cy="24.72" r="6.5" fill="currentColor"></circle>
+  <circle cx="50.00" cy="17.00" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+  <circle cx="78.58" cy="66.50" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+  <circle cx="21.42" cy="66.50" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+</svg>
+</span>  <div class="rel"> <div class="cta-title">Start taking orders — done for you — today</div> <p>Orderlya — the WhatsApp ordering platform for MENA restaurants.</p> <div class="cta"> <a href="/orderlya-preview/#signup" class="btn primary"> Start free trial <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg> </a> <a href="/orderlya-preview/pricing" class="btn ghost">Pricing</a> </div> <p class="fine">Unlimited orders · zero commission · 14-day free trial · no card</p> </div> </div> </div> </section> <section class="section alt" data-astro-cid-qedsesaq> <div class="container" data-astro-cid-qedsesaq> <div class="feature-grid" data-astro-cid-qedsesaq> <div class="feature-group" data-astro-cid-qedsesaq> <span class="icon" aria-hidden="true" data-astro-cid-qedsesaq> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-hidden="true" data-icon="marketing" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10v4l9 4V6z"></path><path d="M4 14.2v2.8a1.6 1.6 0 0 0 3.2 0v-1.6"></path></g><path d="M16 8.6a5 5 0 0 1 0 6.8" fill="none" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round"></path></svg> </span> <h2 data-astro-cid-qedsesaq>Can the AI do more than take orders?</h2> <p class="outcome" data-astro-cid-qedsesaq>Yes — smart AI features are on every plan, metered by AI Units. Every plan includes a monthly Unit allowance (25 on Start, 50 on Run, 100 on Scale) that covers invoice OCR, demand-forecasting hints, smart upselling, personalised recommendations, dietary-preference memory, customer-mood cues, proactive delay-apology messages, and win-back &amp; FAQ suggestions (offered as hints, not promises). When you need more, the AI Growth Package is a one-time EGP 1,250 top-up that adds +500 AI orders &amp; +100 AI Units and never expires.</p> <ul class="feat-incl" data-astro-cid-qedsesaq> <li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Item recommendations </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Demand forecasting </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Invoice OCR </li> </ul> <span class="tag base" data-astro-cid-qedsesaq>Base</span> </div><div class="feature-group" data-astro-cid-qedsesaq> <span class="icon" aria-hidden="true" data-astro-cid-qedsesaq> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-hidden="true" data-icon="inventory" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.4" y="12.6" width="7" height="6.8" rx="0.8"></rect><rect x="13.6" y="12.6" width="7" height="6.8" rx="0.8"></rect><rect x="8.5" y="4.6" width="7" height="6.8" rx="0.8"></rect></g><path d="M12 4.6v6.8M6.9 12.6v6.8M17.1 12.6v6.8" fill="none" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round"></path></svg> </span> <h2 data-astro-cid-qedsesaq>Can I track money and stock?</h2> <p class="outcome" data-astro-cid-qedsesaq>Money &amp; Stock is included in the Scale plan — recipes and real food cost per dish, purchase orders, stock counts, and an auto sell-out guard that 86s a dish across every channel when an ingredient runs low, plus bookkeeping and Egypt VAT-period reports you can export.</p> <ul class="feat-incl" data-astro-cid-qedsesaq> <li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Inventory tracking </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Accounting / journal </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Cost &amp; margin view </li> </ul> <span class="tag edition" data-astro-cid-qedsesaq>Plan</span> </div><div class="feature-group" data-astro-cid-qedsesaq> <span class="icon" aria-hidden="true" data-astro-cid-qedsesaq> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-hidden="true" data-icon="insights" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.6a5.6 5.6 0 0 0-3.4 10.1c.6.5 1 1.2 1 2v.3h4.8v-.3c0-.8.4-1.5 1-2A5.6 5.6 0 0 0 12 3.6z"></path><path d="M9.6 19.4h4.8M10.6 21.4h2.8"></path></g><path d="M10.3 11l1.7-2.3 1.7 2.3" fill="none" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg> </span> <h2 data-astro-cid-qedsesaq>What reporting do I get?</h2> <p class="outcome" data-astro-cid-qedsesaq>Insights is included in the Scale plan — it turns your sales into clear dashboards (best-sellers, slow days, cohorts and exportable reports) plus an ask-your-data copilot and early, experimental demand hints.</p> <ul class="feat-incl" data-astro-cid-qedsesaq> <li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Sales &amp; BI dashboards </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Forecasts </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Exportable reports </li> </ul> <span class="tag edition" data-astro-cid-qedsesaq>Plan</span> </div><div class="feature-group" data-astro-cid-qedsesaq> <span class="icon" aria-hidden="true" data-astro-cid-qedsesaq> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-hidden="true" data-icon="getfound" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6"></circle><path d="M14.9 14.9 19.5 19.5"></path></g><path d="M10.5 7.6a2.1 2.1 0 0 0-2.1 2.1c0 1.6 2.1 3.7 2.1 3.7s2.1-2.1 2.1-3.7a2.1 2.1 0 0 0-2.1-2.1z" fill="none" style="stroke:var(--accent)" stroke-width="1.6" stroke-linejoin="round"></path></svg> </span> <h2 data-astro-cid-qedsesaq>Can customers find me on Google?</h2> <p class="outcome" data-astro-cid-qedsesaq>Every plan includes a free SEO health meter — a diagnostic that scores how findable your storefront is and tells you exactly what to fix. The paid Get Found (SEO) add-on (EGP 250/month, with one free refresh a month and EGP 250 per extra refresh) then does the work for you: AI-written menu pages search engines can read plus structured data, so new customers discover you on Google and Maps. It&#39;s an add-on you can switch on with any plan, including Scale.</p> <ul class="feat-incl" data-astro-cid-qedsesaq> <li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Free SEO health meter on every plan </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Search-ready AI menu pages (paid) </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Google &amp; Maps visibility </li> </ul> <span class="tag module" data-astro-cid-qedsesaq>Add-on</span> </div><div class="feature-group" data-astro-cid-qedsesaq> <span class="icon" aria-hidden="true" data-astro-cid-qedsesaq> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-hidden="true" data-icon="hq" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3.5" width="12" height="17" rx="1"></rect><path d="M4.5 20.5h15"></path><path d="M10.6 20.5v-3.2h2.8v3.2"></path></g><path d="M9.4 7.2h1.6M13 7.2h1.6M9.4 10.6h1.6M13 10.6h1.6M9.4 14h1.6M13 14h1.6" fill="none" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round"></path></svg> </span> <h2 data-astro-cid-qedsesaq>Can I run multiple branches?</h2> <p class="outcome" data-astro-cid-qedsesaq>The Scale plan rolls every branch into one Brand HQ — league tables, same-store-sales year-on-year, channel mix and an anomaly digest — with per-branch order metering and aggregator settlement reconciliation that matches your Talabat and card settlements to sales net of fees.</p> <ul class="feat-incl" data-astro-cid-qedsesaq> <li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Multi-branch HQ dashboard </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Aggregator connections </li><li data-astro-cid-qedsesaq> <span class="c" data-astro-cid-qedsesaq><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qedsesaq><path d="M4 12l5 5L20 6" data-astro-cid-qedsesaq></path></svg></span> Per-branch order metering </li> </ul> <span class="tag edition" data-astro-cid-qedsesaq>Plan</span> </div> </div> </div> </section> <section class="section cta-band"> <div class="wrap"> <div class="band-cta"> <span class="ord-mark bmark" style="--mark-size:280px" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512" role="img" aria-label="Orderlya mark">
+  <circle cx="50" cy="50" r="30" fill="var(--ord-saffron, #E0A43B)" fill-opacity="0.12"></circle>
+  <circle cx="71.21" cy="24.72" r="6.5" fill="currentColor"></circle>
+  <circle cx="82.50" cy="44.27" r="6.5" fill="currentColor"></circle>
+  <circle cx="61.29" cy="81.01" r="6.5" fill="currentColor"></circle>
+  <circle cx="38.71" cy="81.01" r="6.5" fill="currentColor"></circle>
+  <circle cx="17.50" cy="44.27" r="6.5" fill="currentColor"></circle>
+  <circle cx="28.79" cy="24.72" r="6.5" fill="currentColor"></circle>
+  <circle cx="50.00" cy="17.00" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+  <circle cx="78.58" cy="66.50" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+  <circle cx="21.42" cy="66.50" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+</svg>
+</span>  <div class="rel"> <h2>Start taking orders — done for you — today</h2> <p>Orderlya — the WhatsApp ordering platform for MENA restaurants.</p> <div class="cta"> <a href="/orderlya-preview/#signup" class="btn primary"> Start free trial <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg> </a> <a href="/orderlya-preview/pricing" class="btn ghost">Pricing</a> </div> <p class="fine">Unlimited orders · zero commission · 14-day free trial · no card</p> </div> </div> </div> </section>   </main> <footer class="site-footer"> <div class="wrap"> <div class="foot"> <div class="brandcol"> <span class="word wm-inline wm-footer" style="--wm-h:38px" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 116" width="432" height="116" role="img" aria-label="Orderlya logo full">
+  <g transform="translate(2 12) scale(0.92)">
+    <circle cx="50" cy="50" r="30" fill="var(--ord-saffron, #E0A43B)" fill-opacity="0.12"></circle>
+    <circle cx="71.21" cy="24.72" r="6.5" fill="currentColor"></circle>
+    <circle cx="82.50" cy="44.27" r="6.5" fill="currentColor"></circle>
+    <circle cx="61.29" cy="81.01" r="6.5" fill="currentColor"></circle>
+    <circle cx="38.71" cy="81.01" r="6.5" fill="currentColor"></circle>
+    <circle cx="17.50" cy="44.27" r="6.5" fill="currentColor"></circle>
+    <circle cx="28.79" cy="24.72" r="6.5" fill="currentColor"></circle>
+    <circle cx="50.00" cy="17.00" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+    <circle cx="78.58" cy="66.50" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+    <circle cx="21.42" cy="66.50" r="6.5" fill="var(--ord-saffron, #E0A43B)"></circle>
+  </g>
+  <text x="100" y="84" font-family="'Bricolage Grotesque Variable','Bricolage Grotesque','Arial Black',sans-serif" font-size="74" font-weight="700" letter-spacing="-3.5" fill="currentColor">Order<tspan fill="var(--brand-lya, #B0472B)">lya</tspan></text>
+</svg>
+</span>  <p>Orderlya — the WhatsApp ordering platform for MENA restaurants.</p> <a href="/orderlya-preview/#signup" class="btn primary sm">Start your free trial</a> </div> <div class="fcol"> <h3>Product</h3> <a href="/orderlya-preview/features">Features</a><a href="/orderlya-preview/pricing">Pricing</a><a href="/orderlya-preview/compare">Compare</a><a href="/orderlya-preview/vs-delivery-aggregators">vs delivery aggregators</a> </div> <div class="fcol"> <h3>Solutions</h3> <a href="/orderlya-preview/whatsapp-ordering-egypt">WhatsApp ordering</a><a href="/orderlya-preview/ai-ordering">AI order-taking</a><a href="/orderlya-preview/commission-free-egypt">Commission-free</a><a href="/orderlya-preview/compare/foodics-alternative-egypt">Foodics alternative</a><a href="/orderlya-preview/compare/talabat-alternative-egypt">Talabat alternative</a><a href="/orderlya-preview/compare/elmenus-alternative-egypt">Elmenus alternative</a><a href="/orderlya-preview/compare/sapaad-alternative-egypt">Sapaad alternative</a><a href="/orderlya-preview/features/kitchen-display-system">Kitchen Display System</a><a href="/orderlya-preview/features/accounting-eta">Accounting &amp; ETA</a><a href="/orderlya-preview/features/inventory">Inventory</a><a href="/orderlya-preview/features/signals">Signals</a> </div> <div class="fcol"> <h3>Company</h3> <a href="/orderlya-preview/blog">Blog</a><a href="/orderlya-preview/about">About</a><a href="/orderlya-preview/faq">FAQ</a><a href="/orderlya-preview/legal">Terms &amp; Privacy</a><a href="/orderlya-preview/contact">Contact us</a> </div> <div class="fcol"> <h3>Start free trial</h3> <a href="/orderlya-preview/#signup">Start your free trial</a> <p class="placeholder">No credit card to start. Cancel any time during your 14-day trial.</p> </div> </div> <div class="foot-bottom"> <span>© 2026 Orderlya. All rights reserved.</span> <nav class="foot-social" aria-label="Follow us"> <a href="https://www.linkedin.com/company/orderlya" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Orderlya on LinkedIn" title="Orderlya on LinkedIn"> <!-- No brand-set LinkedIn glyph yet; clean inline SVG matches the Icon.astro
+               stroke style (currentColor body + themed --accent detail). --> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-hidden="true" style="--accent: var(--icon-accent, var(--am));"> <rect x="3.6" y="3.6" width="16.8" height="16.8" rx="4" stroke="currentColor" stroke-width="1.7"></rect> <path d="M7.4 10.2v6.2M7.4 7.5v.02" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"></path> <path d="M11 16.4v-6.2M11 12.6c0-1.5 1-2.4 2.4-2.4 1.5 0 2.4 1 2.4 2.6v3.8" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </a> <a href="https://www.instagram.com/order.lya" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Orderlya on Instagram"> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-label="Orderlya on Instagram" data-icon="instagram" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.6" y="3.6" width="16.8" height="16.8" rx="5"></rect></g><g fill="none" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><circle cx="16.6" cy="7.4" r="0.6"></circle></g></svg> </a> <a href="https://www.facebook.com/orderlya" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Orderlya on Facebook"> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-label="Orderlya on Facebook" data-icon="facebook" style="--accent: var(--icon-accent, var(--am));"><rect x="3.6" y="3.6" width="16.8" height="16.8" rx="4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></rect><path d="M14.6 20.4v-6.1h2l.4-2.6h-2.4V10a1.3 1.3 0 0 1 1.5-1.4h1.1V6.3a14 14 0 0 0-2-.15c-2.05 0-3.4 1.25-3.4 3.5v2h-2.2v2.6h2.2v6.1" fill="none" style="stroke:var(--accent)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg> </a> <a href="https://wa.me/201144083323" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Orderlya on WhatsApp"> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-label="Orderlya on WhatsApp" data-icon="whatsapp" style="--accent: var(--icon-accent, var(--am));"><path d="M4 20l1.15-4.1a7.6 7.6 0 1 1 2.95 2.95z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.4 8.2c-.3 0-.6.1-.85.4-.3.35-.75.85-.75 1.9s.8 2.15 1 2.35c.85 1.15 2 2 3.35 2.5 1.35.5 1.65.35 1.95.3.45-.05 1.15-.5 1.3-.95.15-.45.15-.85.1-.95-.05-.1-.2-.15-.45-.28-.25-.12-1.15-.6-1.35-.65-.2-.08-.3-.1-.45.1-.13.2-.5.63-.6.75-.13.15-.23.15-.43.05" fill="none" style="stroke:var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg> </a> <a href="mailto:hello@orderlya.com" class="soc" aria-label="Email Orderlya"> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" role="img" aria-label="Email Orderlya" data-icon="email" style="--accent: var(--icon-accent, var(--am));"><path d="M15.4 12v1.5a2.1 2.1 0 0 0 4.2 0V12a8 8 0 1 0-3.1 6.4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.4 12a3.4 3.4 0 1 0-1 2.4" fill="none" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.4 9.2v5.2" fill="none" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round"></path></svg> </a> </nav> </div> </div> </footer> <div class="oa-widget" dir="ltr" data-api-base data-locale="en" data-astro-cid-pi66rgpr> <button type="button" class="oa-fab" aria-haspopup="dialog" aria-expanded="false" aria-controls="oa-panel" aria-label="Ask Orderlya" data-astro-cid-pi66rgpr> <svg viewBox="0 0 24 24" width="24" height="24" fill="none" role="img" aria-hidden="true" data-icon="chat" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13.5a2 2 0 0 1-2 2H9l-4 3V6a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2z"></path></g><g style="fill:var(--accent)"><circle cx="8.6" cy="9.8" r="1.15"></circle><circle cx="12" cy="9.8" r="1.15"></circle><circle cx="15.4" cy="9.8" r="1.15"></circle></g></svg> <span class="oa-fab-label" data-astro-cid-pi66rgpr>Ask Orderlya</span> </button> <div id="oa-panel" class="oa-panel" role="dialog" aria-modal="false" aria-label="Ask Orderlya" hidden data-astro-cid-pi66rgpr> <header class="oa-head" data-astro-cid-pi66rgpr> <div data-astro-cid-pi66rgpr> <div class="oa-title" data-astro-cid-pi66rgpr> <svg viewBox="0 0 24 24" width="18" height="18" fill="none" class="oa-title-ai" role="img" aria-hidden="true" data-icon="intelligence" style="--accent: var(--icon-accent, var(--am));"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.6a5.6 5.6 0 0 0-3.4 10.1c.6.5 1 1.2 1 2v.3h4.8v-.3c0-.8.4-1.5 1-2A5.6 5.6 0 0 0 12 3.6z"></path><path d="M9.6 19.4h4.8M10.6 21.4h2.8"></path></g><path d="M12 7.2v3.2M12 10.4l-1.8-1.2M12 10.4l1.8-1.2" fill="none" style="stroke:var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="11.4" r="1.1" style="fill:var(--accent)"></circle></svg> Ask Orderlya </div> <div class="oa-sub" data-astro-cid-pi66rgpr>Questions about plans, pricing &amp; the free trial</div> </div> <button type="button" class="oa-close" aria-label="Close" data-astro-cid-pi66rgpr>&times;</button> </header>  <div class="oa-log" role="log" aria-live="polite" data-astro-cid-pi66rgpr> <div class="oa-msg oa-bot" data-astro-cid-pi66rgpr>Hi! Ask me about Orderlya&#39;s plans and pricing, how the AI takes your orders, or the free trial.</div> </div> <form class="oa-form" data-astro-cid-pi66rgpr> <label class="oa-visually-hidden" for="oa-input" data-astro-cid-pi66rgpr>Ask a question about Orderlya…</label> <input id="oa-input" class="oa-input" type="text" maxlength="500" autocomplete="off" placeholder="Ask a question about Orderlya…" data-astro-cid-pi66rgpr> <button type="submit" class="oa-send" data-astro-cid-pi66rgpr>Send</button> </form> <div class="oa-turnstile" aria-hidden="true" data-astro-cid-pi66rgpr></div> </div> </div> <script>(function(){const errorText = "Couldn't get an answer right now. Try the FAQ page or start your free trial.";
+const capText = {"thanks":"Thanks! Our team will reach out soon.","thanksAt":"Perfect — we'll reach out at {c}."};
+const sugText = {"prompt":"Got an idea to make Orderlya better? Share it with us.","placeholder":"Type your suggestion…","send":"Send","dismiss":"No thanks","thanks":"Thanks for the idea! Our product team will see it.","empty":"Please type your suggestion first."};
+
+  (function () {
+    var root = document.querySelector(".oa-widget");
+    if (!root) return;
+    var API_BASE = root.getAttribute("data-api-base") || "";
+    // Page locale ("en"/"ar") — sent with the question so the assistant grounds Arabic
+    // answers on the catalog's AUTHORED Arabic feature facts, not a runtime translation.
+    var LOCALE = root.getAttribute("data-locale") || "en";
+    var TS_KEY = "";  // fetched at runtime from GET /public/config (never baked in).
+    var fab = root.querySelector(".oa-fab");
+    var panel = root.querySelector(".oa-panel");
+    var closeBtn = root.querySelector(".oa-close");
+    var form = root.querySelector(".oa-form");
+    var input = root.querySelector(".oa-input");
+    var sendBtn = root.querySelector(".oa-send");
+    var log = root.querySelector(".oa-log");
+    var tsHolder = root.querySelector(".oa-turnstile");
+
+    // Astro SCOPES this component's <style> with a data-astro-cid-* attribute that ONLY
+    // server-rendered nodes carry (e.g. the greeting `.oa-msg.oa-bot`). Chat bubbles and
+    // the lead-capture card are created in JS below, so they must be stamped with the SAME
+    // attribute — otherwise the scoped `.oa-msg / .oa-bot / .oa-user` rules never match and
+    // those nodes render UNSTYLED, which is why AI REPLIES lost their bot bubble and looked
+    // identical to the (also-unstyled) user messages. `newEl()` is the ONE seam every
+    // dynamically-created widget node goes through, so this whole regression class stays
+    // fixed for any future element too (rule 0a-THEME).
+    var scopeAttr = "";
+    var _rootAttrs = root.attributes;
+    for (var _i = 0; _i < _rootAttrs.length; _i++) {
+      if (_rootAttrs[_i].name.indexOf("data-astro-cid-") === 0) { scopeAttr = _rootAttrs[_i].name; break; }
+    }
+    function newEl(tag) {
+      var node = document.createElement(tag);
+      if (scopeAttr) node.setAttribute(scopeAttr, "");
+      return node;
+    }
+
+    // Per-session id (stable within a tab session) — the per-session rate-limit key.
+    var SKEY = "orderlya_ask_sid";
+    var sid;
+    try {
+      sid = sessionStorage.getItem(SKEY);
+      if (!sid) {
+        sid = (crypto && crypto.randomUUID && crypto.randomUUID()) || "sid_" + Date.now() + "_" + Math.random().toString(36).slice(2);
+        sessionStorage.setItem(SKEY, sid);
+      }
+    } catch (e) {
+      sid = "sid_" + Date.now();
+    }
+
+    var tsToken = "";
+    var tsLoaded = false;
+    function renderTurnstile() {
+      if (!TS_KEY || tsLoaded) return;
+      tsLoaded = true;
+      var s = document.createElement("script");
+      s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+      s.async = true;
+      s.defer = true;
+      s.onload = function () {
+        try {
+          if (window.turnstile) {
+            window.turnstile.render(tsHolder, {
+              sitekey: TS_KEY,
+              size: "invisible",
+              callback: function (tok) { tsToken = tok; },
+            });
+          }
+        } catch (e) {}
+      };
+      document.head.appendChild(s);
+    }
+    var cfgFetched = false;
+    function loadTurnstile() {
+      // Fetch the SITE KEY at runtime (rotatable without a rebuild), then render the
+      // invisible challenge. If no key is configured server-side, the bot-gate is off
+      // (the server's budget kill-switch still bounds cost).
+      if (cfgFetched) { renderTurnstile(); return; }
+      cfgFetched = true;
+      fetch(API_BASE + "/public/config")
+        .then(function (r) { return r.ok ? r.json() : {}; })
+        .then(function (cfg) { TS_KEY = (cfg && cfg.turnstile_site_key) || ""; renderTurnstile(); })
+        .catch(function () { /* no key ⇒ gate off; budget cap still enforced */ });
+    }
+
+    function addMsg(text, who) {
+      var el = newEl("div");
+      el.className = "oa-msg " + (who === "user" ? "oa-user" : "oa-bot");
+      el.textContent = text;
+      log.appendChild(el);
+      log.scrollTop = log.scrollHeight;
+      return el;
+    }
+
+    // ── Ask-bot lead capture — ONE ask, reply-based (no double-ask, no nag) ───
+    // The SERVER (the model's offer_capture flag) decides WHEN it is a follow-up-worthy
+    // moment; on that turn the BOT has ALREADY verbally asked, in its answer, for a contact
+    // (prompt rule 7). So the widget does NOT render a second side-field (that would be a
+    // DOUBLE-ask) — instead it ARMS `awaitingContact` and captures the contact from the
+    // visitor's NEXT chat message. `captureOffered` guards it to ONCE per session: after a
+    // capture OR a decline the bot never asks again (no nag loop). EN + AR both work — the
+    // bot asks in the visitor's language and the confirmation uses the localized capText.
+    var captureOffered = false;   // one ask per session (mechanical ask-once guard)
+    var awaitingContact = false;  // the bot just asked; capture the next reply as the contact
+    var lastQuestion = "";        // the Q that triggered the current answer
+    var transcript = [];          // recent turns for sales context (display strings)
+    // Ask-bot overhaul — multi-turn MEMORY: a stable conversation id + structured history the
+    // server threads for context (bounded server-side). Plus the last capture signal so a lead
+    // records WHAT we couldn't deliver + WHY.
+    var convId = sid || ("c" + Date.now() + Math.random().toString(36).slice(2, 8));
+    var history = [];             // [{role:"user"|"assistant", content:str}] (last 8 sent)
+    var lastUnmetNeed = "";
+    var lastLeadReason = "";
+    function firstPartyAnonId() {
+      try { return localStorage.getItem("orderlya_aid") || null; } catch (e) { return null; }
+    }
+    // Arm reply-capture once (the bot already asked verbally). captureOffered => never re-arm.
+    function armContactCapture() {
+      if (captureOffered) return;
+      captureOffered = true;
+      awaitingContact = true;
+    }
+    // Pull an email or a phone number out of a reply. PRECISE (not greedy) so an ordinary
+    // question that merely contains digits is NOT mistaken for a contact: a phone is accepted
+    // only when the whole reply is dial characters (the visitor answered "what's your number?").
+    function detectContact(text) {
+      var t = (text || "").trim();
+      var em = t.match(/[^\s@]+@[^\s@]+\.[^\s@]+/);
+      if (em) return { email: em[0] };
+      var digitCount = (t.match(/[0-9]/g) || []).length;
+      var nonDial = t.replace(/[0-9+\-\s().]/g, "").length;
+      if (nonDial === 0 && digitCount >= 8 && digitCount <= 15) return { phone: t };
+      return null;
+    }
+    // Persist the captured contact (email OR WhatsApp/phone) + the demand signal, then confirm
+    // inline echoing the contact ("Perfect — we'll reach out at <contact>."). Best-effort.
+    function captureContact(contact) {
+      var val = contact.email || contact.phone;
+      var body = {
+        session_id: sid,
+        anonymous_id: firstPartyAnonId(),
+        turnstile_token: tsToken,
+        locale: LOCALE,
+        question: lastQuestion,
+        transcript: transcript.slice(-12),
+        unmet_need: lastUnmetNeed || null,
+        lead_reason: lastLeadReason || null,
+      };
+      if (contact.email) body.email = contact.email; else body.phone = contact.phone;
+      var confirmMsg = (capText.thanksAt ? capText.thanksAt.replace("{c}", val) : capText.thanks);
+      var pending = addMsg("…", "bot");
+      fetch(API_BASE + "/public/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      })
+        .then(function () { pending.textContent = confirmMsg; })
+        .catch(function () { pending.textContent = capText.thanks; })  // best-effort: never scold a lead
+        .finally(function () {
+          transcript.push("A: " + confirmMsg);
+          log.scrollTop = log.scrollHeight;
+          try { if (window.turnstile && TS_KEY) window.turnstile.reset(tsHolder); } catch (e) {}
+          tsToken = "";
+        });
+    }
+
+    // ── AI-suggestions in-chat capture (hint-only, non-pushy) ────────────────
+    // The SERVER (the model's offer_suggestion flag) decides WHEN to offer; the widget
+    // renders a small optional suggestion box, at most ONCE per session, never blocking
+    // the chat. Declining stores nothing. Mirrors the offerCapture() pattern.
+    var suggestOffered = false;
+    function offerSuggestion() {
+      if (suggestOffered) return;
+      suggestOffered = true;
+      var wrap = newEl("div");
+      wrap.className = "oa-capture";
+      var p = newEl("div");
+      p.className = "oa-capture-prompt";
+      p.textContent = sugText.prompt;
+      var ta = newEl("textarea");
+      ta.className = "oa-capture-input";
+      ta.setAttribute("rows", "2");
+      ta.setAttribute("maxlength", "2000");
+      ta.placeholder = sugText.placeholder;
+      var row = newEl("div");
+      row.className = "oa-capture-row";
+      var send = newEl("button");
+      send.type = "button";
+      send.className = "oa-capture-send";
+      send.textContent = sugText.send;
+      var dismiss = newEl("button");
+      dismiss.type = "button";
+      dismiss.className = "oa-capture-dismiss";
+      dismiss.textContent = sugText.dismiss;
+      row.appendChild(send);
+      wrap.appendChild(p); wrap.appendChild(ta); wrap.appendChild(row); wrap.appendChild(dismiss);
+      log.appendChild(wrap);
+      log.scrollTop = log.scrollHeight;
+      setTimeout(function () { ta.focus(); }, 30);
+
+      function done(msg) { wrap.innerHTML = ""; var d = newEl("div"); d.className = "oa-capture-done"; d.textContent = msg; wrap.appendChild(d); log.scrollTop = log.scrollHeight; }
+      dismiss.addEventListener("click", function () { wrap.remove(); });  // decline → store nothing
+      var sending = false;
+      function submitSuggestion() {
+        var text = (ta.value || "").trim();
+        if (!text) { ta.setAttribute("aria-invalid", "true"); p.textContent = sugText.empty; return; }
+        if (sending) return;
+        sending = true; send.disabled = true;
+        fetch(API_BASE + "/public/suggestion", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            text: text,
+            source: "ask_assistant",
+            session_id: sid,
+            anonymous_id: firstPartyAnonId(),
+            turnstile_token: tsToken,
+            locale: LOCALE,
+          }),
+        })
+          .then(function () { done(sugText.thanks); })
+          .catch(function () { done(sugText.thanks); })  // best-effort: never scold
+          .finally(function () {
+            try { if (window.turnstile && TS_KEY) window.turnstile.reset(tsHolder); } catch (e) {}
+            tsToken = "";
+          });
+      }
+      send.addEventListener("click", submitSuggestion);
+    }
+
+    function openPanel() {
+      panel.hidden = false;
+      fab.setAttribute("aria-expanded", "true");
+      loadTurnstile();
+      setTimeout(function () { input && input.focus(); }, 30);
+    }
+    function closePanel() {
+      panel.hidden = true;
+      fab.setAttribute("aria-expanded", "false");
+      fab.focus();
+    }
+
+    // demo_bot_click — secondary conversion: the visitor opens the "Ask Orderlya" demo
+    // bot (the on-site try-the-bot CTA). Fire ONCE per session on the first open, via the
+    // shared lib/track.ts seam (posthog + Google Ads gtag + conversion send). No PII.
+    var demoTracked = false;
+    function trackDemoOpen() {
+      if (demoTracked) return;
+      demoTracked = true;
+      try {
+        if (window.orderlyaTrack) window.orderlyaTrack("demo_bot_click", { locale: LOCALE, source: "assistant_widget" });
+      } catch (e) {}
+    }
+
+    fab.addEventListener("click", function () {
+      if (panel.hidden) { trackDemoOpen(); openPanel(); } else closePanel();
+    });
+    closeBtn.addEventListener("click", closePanel);
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !panel.hidden) closePanel();
+    });
+
+    var busy = false;
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (busy) return;
+      var q = (input.value || "").trim();
+      if (!q) return;
+      if (q.length > 500) q = q.slice(0, 500);
+
+      // If the bot just asked for a contact, try to capture it from THIS reply — ONE ask per
+      // turn (no widget side-field) and, via captureOffered, at most once per session (no nag).
+      if (awaitingContact) {
+        awaitingContact = false;  // consume the turn either way — never re-ask (graceful decline)
+        var contact = detectContact(q);
+        if (contact) {
+          addMsg(q, "user");
+          transcript.push("Q: " + q);
+          input.value = "";
+          captureContact(contact);
+          return;  // do NOT forward a contact to /public/ask
+        }
+        // Not a contact → treat as a normal question below (they moved on; we don't re-ask).
+      }
+
+      addMsg(q, "user");
+      lastQuestion = q;
+      transcript.push("Q: " + q);
+      input.value = "";
+      busy = true;
+      sendBtn.disabled = true;
+      var pending = addMsg("…", "bot");
+
+      fetch(API_BASE + "/public/ask", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          question: q, session_id: sid, conversation_id: convId,
+          history: history.slice(-8), turnstile_token: tsToken, locale: LOCALE,
+        }),
+      })
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+        .then(function (data) {
+          pending.textContent = (data && data.answer) ? data.answer : errorText;
+          history.push({ role: "user", content: q });
+          if (data && data.answer) {
+            transcript.push("A: " + String(data.answer).slice(0, 300));
+            history.push({ role: "assistant", content: String(data.answer).slice(0, 1000) });
+          }
+          // Ask-bot overhaul — remember the last capture signal so a lead records the demand.
+          if (data && data.unmet_need) lastUnmetNeed = String(data.unmet_need).slice(0, 200);
+          if (data && data.lead_reason) lastLeadReason = String(data.lead_reason).slice(0, 40);
+          // Server (model) decides the moment. On offer_capture the bot ALREADY asked verbally
+          // in its answer, so we only ARM reply-capture (no second side-field = no double-ask);
+          // captureOffered makes it at most once per session (ask-once / no nag).
+          if (data && data.offer_capture) armContactCapture();
+          // Hint-only suggestion offer — only when the visitor hinted at a wish/idea.
+          else if (data && data.offer_suggestion) offerSuggestion();
+        })
+        .catch(function () {
+          pending.textContent = errorText;
+        })
+        .finally(function () {
+          busy = false;
+          sendBtn.disabled = false;
+          log.scrollTop = log.scrollHeight;
+          // Reset the invisible Turnstile token so the next question re-challenges.
+          try { if (window.turnstile && TS_KEY) window.turnstile.reset(tsHolder); } catch (e) {}
+          tsToken = "";
+        });
+    });
+  })();
+})();</script>  </body></html>

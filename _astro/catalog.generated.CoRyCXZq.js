@@ -1,0 +1,1 @@
+const A={run:{priceEgp:1850}},S={takeRate:.25},G={start:{EGP:850,USD:17,SAR:65},run:{EGP:1850,USD:37,SAR:140},scale:{EGP:2850,USD:57,SAR:215},extraBranch:{EGP:1250,USD:25,SAR:95},seo:{EGP:250,USD:5,SAR:19},aiGrowth:{EGP:1250,USD:25,SAR:95}};export{S as C,A as a,G as b};
